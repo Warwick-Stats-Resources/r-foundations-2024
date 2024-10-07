@@ -4,7 +4,9 @@ date: last-modified
 draft: true
 ---
 
-***This page and the slides for this session are still under development***
+:::{.callout-note}
+This page and the slides for this session are still under development
+:::
 
 ## TODO
 

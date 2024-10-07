@@ -1,0 +1,52 @@
+---
+title: Data types, stuctures, and wrangling
+date: 2024-10-24
+---
+
+:::{.callout-note}
+This page and the slides for this session are still under development
+:::
+
+## TODO
+
+- Update TITLE
+- Update date
+- Fill in resources
+- change `draft` to `false`
+
+## Slides
+
+Here's a link to the [slides](/slides/02-data-wrangling/index.qmd){target="_blank"} in a new window. 
+
+Here are the slides embedded:
+
+<iframe class="slide-deck ar3x2" src="/slides/02-data-wrangling/index.html" title="02-data-wrangling slides">
+</iframe>
+
+## Resources
+
+### R and RStudio
+
+- [RStudio cheatsheets](https://www.rstudio.com/resources/cheatsheets/){target="_blank"}
+
+- [**dplyr** cheatsheet](https://rstudio.github.io/cheatsheets/html/data-transformation.html){target="_blank"}
+
+- [R for data science book](https://r4ds.had.co.nz){target="_blank"}
+
+### Packages
+
+- **dplyr**
+
+  <https://dplyr.tidyverse.org>
+  
+- **forcats**
+
+  <https://forcats.tidyverse.org>
+
+- **ferriswheels**
+
+  <https://github.com/EmilHvitfeldt/ferriswheels>
+  
+- **here**
+
+  <https://here.r-lib.org>

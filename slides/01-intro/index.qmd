@@ -1,8 +1,8 @@
 ---
-title: First Session
-subtitle: COURSE NAME
-author: INSTRUCTOR | DEPARTMENT
-date: 2023-05-01
+title: SESSION TITLE
+subtitle: R Foundations 2024
+author: Ella Kaye, Department of Statistics
+date: yyyy-MM-dd
 date-format: long
 format: 
   warwickpres-revealjs:
@@ -20,19 +20,6 @@ format:
 -   What we're covering
 
 # Section {.inverse}
-
-## Some code
-
-```{r}
-library(tidyverse)
-library(palmerpenguins)
-penguins |>
-  filter(sex == "female",
-         species == "Gentoo") |>
-  slice_max(body_mass_g, n = 5) |>
-  select(contains("bill"))
-```
-
 
 # End matter {.inverse}
 
