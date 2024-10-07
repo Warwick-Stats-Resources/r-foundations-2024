@@ -1,7 +1,7 @@
 ---
 title: SESSION TITLE
-subtitle: COURSE NAME
-author: INSTRUCTOR | DEPARTMENT
+subtitle: R Foundations 2024
+author: Ella Kaye, Department of Statistics
 date: yyyy-MM-dd
 date-format: long
 format: 
