@@ -12,7 +12,7 @@ For students at other universities attending APTS, working through the content s
 
 ## Syllabus overview
 
-We cover at introduction to R and RStudio; Data types, structures, and data wrangling using the tidyverse; programming in R; simulation and optimisation; graphics (both base and ggplot2), and Quarto.
+We cover an introduction to R and RStudio; Data types, structures, and data wrangling using the tidyverse; programming in R; simulation and optimisation; graphics (both base and ggplot2), and Quarto.
 
 All slides and further resources can be accessed from the [content](content.qmd) page and also via the [schedule](schedule.qmd). 
 
