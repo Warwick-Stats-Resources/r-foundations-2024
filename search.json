@@ -172,7 +172,7 @@
     "href": "index.html#syllabus-overview",
     "title": "R Foundations 2024",
     "section": "Syllabus overview",
-    "text": "Syllabus overview\nWe cover at introduction to R and RStudio; Data types, structures, and data wrangling using the tidyverse; programming in R; simulation and optimisation; graphics (both base and ggplot2), and Quarto.\nAll slides and further resources can be accessed from the content page and also via the schedule."
+    "text": "Syllabus overview\nWe cover an introduction to R and RStudio; Data types, structures, and data wrangling using the tidyverse; programming in R; simulation and optimisation; graphics (both base and ggplot2), and Quarto.\nAll slides and further resources can be accessed from the content page and also via the schedule."
   },
   {
     "objectID": "index.html#session-details",
