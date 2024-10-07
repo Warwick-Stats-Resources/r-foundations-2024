@@ -26,7 +26,7 @@ All slides and further resources can be accessed from the [content](content.qmd)
 
 {{< fa calendar-alt >}} &nbsp; See the full [schedule](schedule.qmd).
 
-Please fill in the [join](join.qmd) form to register to attend.
+Please fill in the [join](https://warwick.ac.uk/fac/sci/statistics/staff/academic-research/kaye/r-foundations-2024/) form to register to attend.
 
 ## Instructor details
 
