@@ -1,0 +1,359 @@
+[
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "This course is taking place in Term 1, 2024.\nIt takes place in weeks 4, 6 and 8, on Mondays from 10:30-12:30 and Thursdays from 12:30-14:00.\nFor dates, see the content page.\n\n\n\nWeek\nMonday 10:30-12:00\nThursday 12:30-14:00\n\n\n\n\n4\nIntroduction to R and RStudio\nData Types, Structures and Wrangling\n\n\n6\nProgramming in R\nSimulation and Optimisation\n\n\n8\nGraphics\nQuarto"
+  },
+  {
+    "objectID": "slides/02-data-wrangling/index.html#overview",
+    "href": "slides/02-data-wrangling/index.html#overview",
+    "title": "SESSION TITLE",
+    "section": "Overview",
+    "text": "Overview\n\nWhat we’re covering"
+  },
+  {
+    "objectID": "slides/02-data-wrangling/index.html#resources",
+    "href": "slides/02-data-wrangling/index.html#resources",
+    "title": "SESSION TITLE",
+    "section": "Resources",
+    "text": "Resources\nMaterial inspired by and remixed from:"
+  },
+  {
+    "objectID": "slides/02-data-wrangling/index.html#license",
+    "href": "slides/02-data-wrangling/index.html#license",
+    "title": "SESSION TITLE",
+    "section": "License",
+    "text": "License\nLicensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
+  },
+  {
+    "objectID": "slides/04-sim-optim/index.html#overview",
+    "href": "slides/04-sim-optim/index.html#overview",
+    "title": "SESSION TITLE",
+    "section": "Overview",
+    "text": "Overview\n\nWhat we’re covering"
+  },
+  {
+    "objectID": "slides/04-sim-optim/index.html#resources",
+    "href": "slides/04-sim-optim/index.html#resources",
+    "title": "SESSION TITLE",
+    "section": "Resources",
+    "text": "Resources\nMaterial inspired by and remixed from:"
+  },
+  {
+    "objectID": "slides/04-sim-optim/index.html#license",
+    "href": "slides/04-sim-optim/index.html#license",
+    "title": "SESSION TITLE",
+    "section": "License",
+    "text": "License\nLicensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
+  },
+  {
+    "objectID": "slides/05-graphics/index.html#overview",
+    "href": "slides/05-graphics/index.html#overview",
+    "title": "SESSION TITLE",
+    "section": "Overview",
+    "text": "Overview\n\nWhat we’re covering"
+  },
+  {
+    "objectID": "slides/05-graphics/index.html#resources",
+    "href": "slides/05-graphics/index.html#resources",
+    "title": "SESSION TITLE",
+    "section": "Resources",
+    "text": "Resources\nMaterial inspired by and remixed from:"
+  },
+  {
+    "objectID": "slides/05-graphics/index.html#license",
+    "href": "slides/05-graphics/index.html#license",
+    "title": "SESSION TITLE",
+    "section": "License",
+    "text": "License\nLicensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "R Foundations 2024",
+    "section": "",
+    "text": "Welcome to the R Foundations course for 2024!\nThis course is primarily aimed at first year Statistics PhD students. It has been developed as a prerequisite for those attending the Academy for PhD Training in Statistics (APTS) to cover the R material that’s required for those modules.\nStudents and staff at the University of Warwick have the opportunity to take this course in-person in Term 1. See the schedule for dates. Details for signing up will be sent round through Department of Statistics mailing lists.\nFor students at other universities attending APTS, working through the content should give you a sufficient grounding to prepare for the R component of the APTS modules."
+  },
+  {
+    "objectID": "index.html#syllabus-overview",
+    "href": "index.html#syllabus-overview",
+    "title": "R Foundations 2024",
+    "section": "Syllabus overview",
+    "text": "Syllabus overview\nWe cover at introduction to R and RStudio; Data types, structures, and data wrangling using the tidyverse; programming in R; simulation and optimisation; graphics (both base and ggplot2), and Quarto.\nAll slides and further resources can be accessed from the content page and also via the schedule."
+  },
+  {
+    "objectID": "index.html#session-details",
+    "href": "index.html#session-details",
+    "title": "R Foundations 2024",
+    "section": "Session details",
+    "text": "Session details\n   Monday and Thursday of weeks 4, 6 and 8\n   10:30–12:00 on Mondays, 12:30–14:00 on Thursdays\n   A1.28, Milburn House\n   See the full schedule.\nPlease fill in the join form to register to attend."
+  },
+  {
+    "objectID": "index.html#instructor-details",
+    "href": "index.html#instructor-details",
+    "title": "R Foundations 2024",
+    "section": "Instructor details",
+    "text": "Instructor details\n   Ella Kaye\n   ella.m.kaye@warwick.ac.uk"
+  },
+  {
+    "objectID": "index.html#prerequistes",
+    "href": "index.html#prerequistes",
+    "title": "R Foundations 2024",
+    "section": "Prerequistes",
+    "text": "Prerequistes\nPlease see the prerequisites page for details on getting set up in advance of the first session."
+  },
+  {
+    "objectID": "content/02-data-wrangling/index.html",
+    "href": "content/02-data-wrangling/index.html",
+    "title": "Data types, stuctures, and wrangling",
+    "section": "",
+    "text": "Note\n\n\n\nThis page and the slides for this session are still under development"
+  },
+  {
+    "objectID": "content/02-data-wrangling/index.html#todo",
+    "href": "content/02-data-wrangling/index.html#todo",
+    "title": "Data types, stuctures, and wrangling",
+    "section": "TODO",
+    "text": "TODO\n\nUpdate TITLE\nUpdate date\nFill in resources\nchange draft to false"
+  },
+  {
+    "objectID": "content/02-data-wrangling/index.html#slides",
+    "href": "content/02-data-wrangling/index.html#slides",
+    "title": "Data types, stuctures, and wrangling",
+    "section": "Slides",
+    "text": "Slides\nHere’s a link to the slides in a new window.\nHere are the slides embedded:"
+  },
+  {
+    "objectID": "content/02-data-wrangling/index.html#resources",
+    "href": "content/02-data-wrangling/index.html#resources",
+    "title": "Data types, stuctures, and wrangling",
+    "section": "Resources",
+    "text": "Resources\n\nR and RStudio\n\nRStudio cheatsheets\ndplyr cheatsheet\nR for data science book\n\n\n\nPackages\n\ndplyr\nhttps://dplyr.tidyverse.org\nforcats\nhttps://forcats.tidyverse.org\nferriswheels\nhttps://github.com/EmilHvitfeldt/ferriswheels\nhere\nhttps://here.r-lib.org"
+  },
+  {
+    "objectID": "content/04-sim-optim/index.html",
+    "href": "content/04-sim-optim/index.html",
+    "title": "Simulation and optimisation",
+    "section": "",
+    "text": "Note\n\n\n\nThis page and the slides for this session are still under development"
+  },
+  {
+    "objectID": "content/04-sim-optim/index.html#slides",
+    "href": "content/04-sim-optim/index.html#slides",
+    "title": "Simulation and optimisation",
+    "section": "Slides",
+    "text": "Slides\nHere’s a link to the slides in a new window.\nHere are the slides embedded:"
+  },
+  {
+    "objectID": "content/04-sim-optim/index.html#resources",
+    "href": "content/04-sim-optim/index.html#resources",
+    "title": "Simulation and optimisation",
+    "section": "Resources",
+    "text": "Resources\n\nReading\n\nDavid Goldberg (1991), “What Every Computer Scientist Should Know About Floating-Point Arithmetic”, ACM Computing Surveys, 23/1, 5–48\nhttps://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html.\nRuth Ripley’s numerical considerations notes for APTS 2013\nhttps://portal.stats.ox.ac.uk/userdata/ruth/APTS2013/Numerics.pdf"
+  },
+  {
+    "objectID": "content/05-graphics/index.html",
+    "href": "content/05-graphics/index.html",
+    "title": "Graphics",
+    "section": "",
+    "text": "Note\n\n\n\nThis page and the slides for this session are still under development"
+  },
+  {
+    "objectID": "content/05-graphics/index.html#slides",
+    "href": "content/05-graphics/index.html#slides",
+    "title": "Graphics",
+    "section": "Slides",
+    "text": "Slides\nHere’s a link to the slides in a new window.\nHere are the slides embedded:"
+  },
+  {
+    "objectID": "content/05-graphics/index.html#resources",
+    "href": "content/05-graphics/index.html#resources",
+    "title": "Graphics",
+    "section": "Resources",
+    "text": "Resources\n\nReading\n\nggplot2: Elegant Graphics for Data Analysis (for an in-depth understanding)\nR for Data Science book: Chapters 3: Data Visualisation and 28: Graphics for Communication, to get up and running quickly\nPlotting anything with ggplot2 webinar with Thomas Lin Pederson (one of the main ggplot2 authors)\nR graphics cookbook, a practical guide that provides more than 150 recipes to help you generate high-quality graphs quickly\nCedric Scherer’s tutorial\nCedric Scherer’s ‘Engaging and Beautiful Data Visualizations with ggplot2’ workshop\nggplot2 reference\n\n\n\nPackages\n\nggplot2\nhttps://ggplot2.tidyverse.org\ngt\nhttps://gt.rstudio.com\ngtsummary\nhttps://www.danieldsjoberg.com/gtsummary/"
+  },
+  {
+    "objectID": "prerequisites.html",
+    "href": "prerequisites.html",
+    "title": "Getting set up",
+    "section": "",
+    "text": "Please ensure that you have the latest versions of R and RStudio installed prior to the first session. Currently, that’s R-4.4.1 and RStudio-2024.09.0.\nWe also strongly recommend you install the development tools to avoid potential issues installing packages."
+  },
+  {
+    "objectID": "prerequisites.html#installing-r",
+    "href": "prerequisites.html#installing-r",
+    "title": "Getting set up",
+    "section": "Installing R",
+    "text": "Installing R\nDownload the pre-compiled binary for your OS from https://cloud.r-project.org/ and install. More specifically:\nFor Windows with admin rights\nClick “Download R for Windows”, then “base”, then “Download R-4.4.1 for Windows”. This will download an .exe file; once downloaded, open to start the installation.\nFor Windows with no admin rights\nDownload the .zip source archive under “Zip/Tarballs”. Extract the files to a folder where you have write access, e.g. C:\\Users\\username\\RStudio. In this folder, open the bin directory and find the RStudio program: it is named rstudio.exe, but the file extension will typically be hidden, so look for rstudio. Right-click this executable to create a desktop shortcut. Double-click the executable or use the shortcut to open.\nFor Mac\nClick “Download R for macOS”, then “R-4.4.1-arm64.pkg” (the first option) to download the installer for Macs with Apple Silicon chips or “R-4.4.1-x86_64.pkg” (the second option) to download the installer for Macs with Intel chips. Run the installer to complete installation.\nFor Linux\nClick “Download R for Linux”. Instructions on installing are given for Debian, Fedora, Redhat, Suse and Ubuntu distributions. Where there is a choice, install both r-base and r-base-dev.\nFor all other operating systems\nDownload the relevant installer for your OS listed under “Installers for Supported Platforms”. Run the installer to complete installation."
+  },
+  {
+    "objectID": "prerequisites.html#installing-r-studio-desktop-open-source-edition",
+    "href": "prerequisites.html#installing-r-studio-desktop-open-source-edition",
+    "title": "Getting set up",
+    "section": "Installing R Studio Desktop (Open Source Edition)",
+    "text": "Installing R Studio Desktop (Open Source Edition)\nDownloads are available from https://posit.co/download/rstudio-desktop/#download\nDownload the relevant installer either under the “Install RStudio” header or, scrolling down the page, from the ‘All installers and Tarballs’ section. Run the installer to complete installation."
+  },
+  {
+    "objectID": "prerequisites.html#development-tools",
+    "href": "prerequisites.html#development-tools",
+    "title": "Getting set up",
+    "section": "Development Tools",
+    "text": "Development Tools\nSome additional tools may be required to compile R packages from source.\nFor Windows with admin rights\nDownload the latest Rtools installer, Rtools.exe, from https://cran.r-project.org/bin/windows/Rtools/. Run the installer making the following selections: keep the default settings for the installation location and components to install; check the box to add rtools to the system PATH.\nFor Windows with no admin rights\nDownload the latest (recommended) Rtools installer, Rtools.exe, from https://cran.r-project.org/bin/windows/Rtools/. Run the installer keeping the default settings.\nFor Mac\nInstall XCode. Either:\n\nDownload and install XCode from the Mac AppStore: http://itunes.apple.com/us/app/xcode/id497799835?mt=12\nWithin XCode go to Preferences : Downloads and install the Command Line Tools\n\nOr for a smaller download size:\n\nRegister as an Apple Developer (free) here: https://developer.apple.com/programs/enroll/\nDownload the Command Line Tools for XCode appropriate for the version of OS X you are running from here: https://developer.apple.com/downloads/\n\nFor Linux\nIf you installed r-base-dev, when installing R, you should have all you need to build packages from source. Otherwise return to the instructions for installing R for your distribution and follow the instructions there to install the additional tools."
+  },
+  {
+    "objectID": "content.html",
+    "href": "content.html",
+    "title": "Content",
+    "section": "",
+    "text": "Date\n\n\nTitle\n\n\n\n\n\n\nOct 21, 2024\n\n\nIntroduction to R and RStudio\n\n\n\n\nOct 24, 2024\n\n\nData types, stuctures, and wrangling\n\n\n\n\nNov 4, 2024\n\n\nProgramming in R\n\n\n\n\nNov 7, 2024\n\n\nSimulation and optimisation\n\n\n\n\nNov 18, 2024\n\n\nGraphics\n\n\n\n\nNov 21, 2024\n\n\nQuarto\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "content/06-quarto/index.html",
+    "href": "content/06-quarto/index.html",
+    "title": "Quarto",
+    "section": "",
+    "text": "Note\n\n\n\nThis page and the slides for this session are still under development"
+  },
+  {
+    "objectID": "content/06-quarto/index.html#slides",
+    "href": "content/06-quarto/index.html#slides",
+    "title": "Quarto",
+    "section": "Slides",
+    "text": "Slides\nHere’s a link to the slides in a new window.\nHere are the slides embedded:"
+  },
+  {
+    "objectID": "content/06-quarto/index.html#resources",
+    "href": "content/06-quarto/index.html#resources",
+    "title": "Quarto",
+    "section": "Resources",
+    "text": "Resources\n\nReading\n\nhttps://quarto.org: The official documentation\nAwesome Quarto: A curated list of Quarto talks, tools, examples & articles\nBeautiful Reports and Persentations with Quarto\nGetting Started with Quarto workshop website\nQuarto for R and RStudio workshop"
+  },
+  {
+    "objectID": "content/01-intro/index.html",
+    "href": "content/01-intro/index.html",
+    "title": "Introduction to R and RStudio",
+    "section": "",
+    "text": "Note\n\n\n\nThis page and the slides for this session are still under development"
+  },
+  {
+    "objectID": "content/01-intro/index.html#slides",
+    "href": "content/01-intro/index.html#slides",
+    "title": "Introduction to R and RStudio",
+    "section": "Slides",
+    "text": "Slides\nHere’s a link to the slides in a new window.\nHere are the slides embedded:"
+  },
+  {
+    "objectID": "content/01-intro/index.html#resources",
+    "href": "content/01-intro/index.html#resources",
+    "title": "Introduction to R and RStudio",
+    "section": "Resources",
+    "text": "Resources\n\nR and RStudio\n\nRStudio IDE cheatsheet\nhttps://rstudio.github.io/cheatsheets/html/rstudio-ide.html\nBeginner resources from the RStudio Education team\nhttps://education.rstudio.com/learn/beginner/\nIntroduction to R and RStudio from the Carpentries\nhttps://carpentries-incubator.github.io/r-tidyverse-4-datasets/01-project-introduction.html\n\n\n\nPackages\n\ntidyverse\nhttps://www.tidyverse.org\npalmerpenguins\nhttps://allisonhorst.github.io/palmerpenguins/index.html"
+  },
+  {
+    "objectID": "content/03-programming/index.html",
+    "href": "content/03-programming/index.html",
+    "title": "Programming in R",
+    "section": "",
+    "text": "Note\n\n\n\nThis page and the slides for this session are still under development"
+  },
+  {
+    "objectID": "content/03-programming/index.html#slides",
+    "href": "content/03-programming/index.html#slides",
+    "title": "Programming in R",
+    "section": "Slides",
+    "text": "Slides\nHere’s a link to the slides in a new window.\nHere are the slides embedded:"
+  },
+  {
+    "objectID": "content/03-programming/index.html#resources",
+    "href": "content/03-programming/index.html#resources",
+    "title": "Programming in R",
+    "section": "Resources",
+    "text": "Resources\n\nReading\n\nEfficient Programming, from Efficient R by Colin Gillespie and Robin Lovelace\nhttps://csgillespie.github.io/efficientR/programming.html\nChapters on functions and iteration, from R for Data Science by Hadley Wickham and Garrett Grolemund\nhttps://r4ds.had.co.nz/index.html\nhttps://r4ds.had.co.nz/functions.html\nhttps://r4ds.had.co.nz/iteration.html"
+  },
+  {
+    "objectID": "slides/00-template/index.html#overview",
+    "href": "slides/00-template/index.html#overview",
+    "title": "SESSION TITLE",
+    "section": "Overview",
+    "text": "Overview\n\nWhat we’re covering"
+  },
+  {
+    "objectID": "slides/00-template/index.html#resources",
+    "href": "slides/00-template/index.html#resources",
+    "title": "SESSION TITLE",
+    "section": "Resources",
+    "text": "Resources\nMaterial inspired by and remixed from:"
+  },
+  {
+    "objectID": "slides/00-template/index.html#license",
+    "href": "slides/00-template/index.html#license",
+    "title": "SESSION TITLE",
+    "section": "License",
+    "text": "License\nLicensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
+  },
+  {
+    "objectID": "slides/06-quarto/index.html#overview",
+    "href": "slides/06-quarto/index.html#overview",
+    "title": "SESSION TITLE",
+    "section": "Overview",
+    "text": "Overview\n\nWhat we’re covering"
+  },
+  {
+    "objectID": "slides/06-quarto/index.html#resources",
+    "href": "slides/06-quarto/index.html#resources",
+    "title": "SESSION TITLE",
+    "section": "Resources",
+    "text": "Resources\nMaterial inspired by and remixed from:"
+  },
+  {
+    "objectID": "slides/06-quarto/index.html#license",
+    "href": "slides/06-quarto/index.html#license",
+    "title": "SESSION TITLE",
+    "section": "License",
+    "text": "License\nLicensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
+  },
+  {
+    "objectID": "slides/01-intro/index.html#overview",
+    "href": "slides/01-intro/index.html#overview",
+    "title": "SESSION TITLE",
+    "section": "Overview",
+    "text": "Overview\n\nWhat we’re covering"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#resources",
+    "href": "slides/01-intro/index.html#resources",
+    "title": "SESSION TITLE",
+    "section": "Resources",
+    "text": "Resources\nMaterial inspired by and remixed from:"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#license",
+    "href": "slides/01-intro/index.html#license",
+    "title": "SESSION TITLE",
+    "section": "License",
+    "text": "License\nLicensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
+  },
+  {
+    "objectID": "slides/03-programming/index.html#overview",
+    "href": "slides/03-programming/index.html#overview",
+    "title": "SESSION TITLE",
+    "section": "Overview",
+    "text": "Overview\n\nWhat we’re covering"
+  },
+  {
+    "objectID": "slides/03-programming/index.html#resources",
+    "href": "slides/03-programming/index.html#resources",
+    "title": "SESSION TITLE",
+    "section": "Resources",
+    "text": "Resources\nMaterial inspired by and remixed from:"
+  },
+  {
+    "objectID": "slides/03-programming/index.html#license",
+    "href": "slides/03-programming/index.html#license",
+    "title": "SESSION TITLE",
+    "section": "License",
+    "text": "License\nLicensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
+  }
+]
