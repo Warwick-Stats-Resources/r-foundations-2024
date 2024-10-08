@@ -1,10 +1,157 @@
 [
   {
+    "objectID": "slides/03-programming/index.html#overview",
+    "href": "slides/03-programming/index.html#overview",
+    "title": "SESSION TITLE",
+    "section": "Overview",
+    "text": "Overview\n\nWhat we’re covering"
+  },
+  {
+    "objectID": "slides/03-programming/index.html#resources",
+    "href": "slides/03-programming/index.html#resources",
+    "title": "SESSION TITLE",
+    "section": "Resources",
+    "text": "Resources\nMaterial inspired by and remixed from:"
+  },
+  {
+    "objectID": "slides/03-programming/index.html#license",
+    "href": "slides/03-programming/index.html#license",
+    "title": "SESSION TITLE",
+    "section": "License",
+    "text": "License\nLicensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
+  },
+  {
+    "objectID": "slides/02-data-wrangling/index.html#overview",
+    "href": "slides/02-data-wrangling/index.html#overview",
+    "title": "SESSION TITLE",
+    "section": "Overview",
+    "text": "Overview\n\nWhat we’re covering"
+  },
+  {
+    "objectID": "slides/02-data-wrangling/index.html#resources",
+    "href": "slides/02-data-wrangling/index.html#resources",
+    "title": "SESSION TITLE",
+    "section": "Resources",
+    "text": "Resources\nMaterial inspired by and remixed from:"
+  },
+  {
+    "objectID": "slides/02-data-wrangling/index.html#license",
+    "href": "slides/02-data-wrangling/index.html#license",
+    "title": "SESSION TITLE",
+    "section": "License",
+    "text": "License\nLicensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
+  },
+  {
+    "objectID": "slides/04-sim-optim/index.html#overview",
+    "href": "slides/04-sim-optim/index.html#overview",
+    "title": "SESSION TITLE",
+    "section": "Overview",
+    "text": "Overview\n\nWhat we’re covering"
+  },
+  {
+    "objectID": "slides/04-sim-optim/index.html#resources",
+    "href": "slides/04-sim-optim/index.html#resources",
+    "title": "SESSION TITLE",
+    "section": "Resources",
+    "text": "Resources\nMaterial inspired by and remixed from:"
+  },
+  {
+    "objectID": "slides/04-sim-optim/index.html#license",
+    "href": "slides/04-sim-optim/index.html#license",
+    "title": "SESSION TITLE",
+    "section": "License",
+    "text": "License\nLicensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
+  },
+  {
+    "objectID": "slides/00-template/index.html#overview",
+    "href": "slides/00-template/index.html#overview",
+    "title": "SESSION TITLE",
+    "section": "Overview",
+    "text": "Overview\n\nWhat we’re covering"
+  },
+  {
+    "objectID": "slides/00-template/index.html#resources",
+    "href": "slides/00-template/index.html#resources",
+    "title": "SESSION TITLE",
+    "section": "Resources",
+    "text": "Resources\nMaterial inspired by and remixed from:"
+  },
+  {
+    "objectID": "slides/00-template/index.html#license",
+    "href": "slides/00-template/index.html#license",
+    "title": "SESSION TITLE",
+    "section": "License",
+    "text": "License\nLicensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
+  },
+  {
     "objectID": "content.html",
     "href": "content.html",
     "title": "Content",
     "section": "",
     "text": "Date\n\n\nTitle\n\n\n\n\n\n\nOct 21, 2024\n\n\nIntroduction to R and RStudio\n\n\n\n\nOct 24, 2024\n\n\nData types, stuctures, and wrangling\n\n\n\n\nNov 4, 2024\n\n\nProgramming in R\n\n\n\n\nNov 7, 2024\n\n\nSimulation and optimisation\n\n\n\n\nNov 18, 2024\n\n\nGraphics\n\n\n\n\nNov 21, 2024\n\n\nQuarto\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "content/06-quarto/index.html",
+    "href": "content/06-quarto/index.html",
+    "title": "Quarto",
+    "section": "",
+    "text": "Note\n\n\n\nThis page and the slides for this session are still under development"
+  },
+  {
+    "objectID": "content/06-quarto/index.html#slides",
+    "href": "content/06-quarto/index.html#slides",
+    "title": "Quarto",
+    "section": "Slides",
+    "text": "Slides\nHere’s a link to the slides in a new window.\nHere are the slides embedded:"
+  },
+  {
+    "objectID": "content/06-quarto/index.html#resources",
+    "href": "content/06-quarto/index.html#resources",
+    "title": "Quarto",
+    "section": "Resources",
+    "text": "Resources\n\nReading\n\nhttps://quarto.org: The official documentation\nAwesome Quarto: A curated list of Quarto talks, tools, examples & articles\nBeautiful Reports and Persentations with Quarto\nGetting Started with Quarto workshop website\nQuarto for R and RStudio workshop"
+  },
+  {
+    "objectID": "content/01-intro/index.html",
+    "href": "content/01-intro/index.html",
+    "title": "Introduction to R and RStudio",
+    "section": "",
+    "text": "Note\n\n\n\nThis page and the slides for this session are still under development"
+  },
+  {
+    "objectID": "content/01-intro/index.html#slides",
+    "href": "content/01-intro/index.html#slides",
+    "title": "Introduction to R and RStudio",
+    "section": "Slides",
+    "text": "Slides\nHere’s a link to the slides in a new window.\nHere are the slides embedded:"
+  },
+  {
+    "objectID": "content/01-intro/index.html#resources",
+    "href": "content/01-intro/index.html#resources",
+    "title": "Introduction to R and RStudio",
+    "section": "Resources",
+    "text": "Resources\n\nR and RStudio\n\nRStudio IDE cheatsheet\nhttps://rstudio.github.io/cheatsheets/html/rstudio-ide.html\nBeginner resources from the RStudio Education team\nhttps://education.rstudio.com/learn/beginner/\nIntroduction to R and RStudio from the Carpentries\nhttps://carpentries-incubator.github.io/r-tidyverse-4-datasets/01-project-introduction.html\n\n\n\nPackages\n\ntidyverse\nhttps://www.tidyverse.org\npalmerpenguins\nhttps://allisonhorst.github.io/palmerpenguins/index.html"
+  },
+  {
+    "objectID": "content/05-graphics/index.html",
+    "href": "content/05-graphics/index.html",
+    "title": "Graphics",
+    "section": "",
+    "text": "Note\n\n\n\nThis page and the slides for this session are still under development"
+  },
+  {
+    "objectID": "content/05-graphics/index.html#slides",
+    "href": "content/05-graphics/index.html#slides",
+    "title": "Graphics",
+    "section": "Slides",
+    "text": "Slides\nHere’s a link to the slides in a new window.\nHere are the slides embedded:"
+  },
+  {
+    "objectID": "content/05-graphics/index.html#resources",
+    "href": "content/05-graphics/index.html#resources",
+    "title": "Graphics",
+    "section": "Resources",
+    "text": "Resources\n\nReading\n\nggplot2: Elegant Graphics for Data Analysis (for an in-depth understanding)\nR for Data Science book: Chapters 3: Data Visualisation and 28: Graphics for Communication, to get up and running quickly\nPlotting anything with ggplot2 webinar with Thomas Lin Pederson (one of the main ggplot2 authors)\nR graphics cookbook, a practical guide that provides more than 150 recipes to help you generate high-quality graphs quickly\nCedric Scherer’s tutorial\nCedric Scherer’s ‘Engaging and Beautiful Data Visualizations with ggplot2’ workshop\nggplot2 reference\n\n\n\nPackages\n\nggplot2\nhttps://ggplot2.tidyverse.org\ngt\nhttps://gt.rstudio.com\ngtsummary\nhttps://www.danieldsjoberg.com/gtsummary/"
   },
   {
     "objectID": "prerequisites.html",
@@ -35,6 +182,13 @@
     "text": "Development Tools\nSome additional tools may be required to compile R packages from source.\nFor Windows with admin rights\nDownload the latest Rtools installer, Rtools.exe, from https://cran.r-project.org/bin/windows/Rtools/. Run the installer making the following selections: keep the default settings for the installation location and components to install; check the box to add rtools to the system PATH.\nFor Windows with no admin rights\nDownload the latest (recommended) Rtools installer, Rtools.exe, from https://cran.r-project.org/bin/windows/Rtools/. Run the installer keeping the default settings.\nFor Mac\nInstall XCode. Either:\n\nDownload and install XCode from the Mac AppStore: http://itunes.apple.com/us/app/xcode/id497799835?mt=12\nWithin XCode go to Preferences : Downloads and install the Command Line Tools\n\nOr for a smaller download size:\n\nRegister as an Apple Developer (free) here: https://developer.apple.com/programs/enroll/\nDownload the Command Line Tools for XCode appropriate for the version of OS X you are running from here: https://developer.apple.com/downloads/\n\nFor Linux\nIf you installed r-base-dev, when installing R, you should have all you need to build packages from source. Otherwise return to the instructions for installing R for your distribution and follow the instructions there to install the additional tools."
   },
   {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "This course is taking place in Term 1, 2024.\nIt takes place in weeks 4, 6 and 8, on Mondays from 10:30-12:30 and Thursdays from 12:30-14:00.\nFor dates, see the content page.\n\n\n\nWeek\nMonday 10:30-12:00\nThursday 12:30-14:00\n\n\n\n\n4\nIntroduction to R and RStudio\nData Types, Structures and Wrangling\n\n\n6\nProgramming in R\nSimulation and Optimisation\n\n\n8\nGraphics\nQuarto"
+  },
+  {
     "objectID": "content/04-sim-optim/index.html",
     "href": "content/04-sim-optim/index.html",
     "title": "Simulation and optimisation",
@@ -56,6 +210,34 @@
     "text": "Resources\n\nReading\n\nDavid Goldberg (1991), “What Every Computer Scientist Should Know About Floating-Point Arithmetic”, ACM Computing Surveys, 23/1, 5–48\nhttps://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html.\nRuth Ripley’s numerical considerations notes for APTS 2013\nhttps://portal.stats.ox.ac.uk/userdata/ruth/APTS2013/Numerics.pdf"
   },
   {
+    "objectID": "content/02-data-wrangling/index.html",
+    "href": "content/02-data-wrangling/index.html",
+    "title": "Data types, stuctures, and wrangling",
+    "section": "",
+    "text": "Note\n\n\n\nThis page and the slides for this session are still under development"
+  },
+  {
+    "objectID": "content/02-data-wrangling/index.html#todo",
+    "href": "content/02-data-wrangling/index.html#todo",
+    "title": "Data types, stuctures, and wrangling",
+    "section": "TODO",
+    "text": "TODO\n\nUpdate TITLE\nUpdate date\nFill in resources\nchange draft to false"
+  },
+  {
+    "objectID": "content/02-data-wrangling/index.html#slides",
+    "href": "content/02-data-wrangling/index.html#slides",
+    "title": "Data types, stuctures, and wrangling",
+    "section": "Slides",
+    "text": "Slides\nHere’s a link to the slides in a new window.\nHere are the slides embedded:"
+  },
+  {
+    "objectID": "content/02-data-wrangling/index.html#resources",
+    "href": "content/02-data-wrangling/index.html#resources",
+    "title": "Data types, stuctures, and wrangling",
+    "section": "Resources",
+    "text": "Resources\n\nR and RStudio\n\nRStudio cheatsheets\ndplyr cheatsheet\nR for data science book\n\n\n\nPackages\n\ndplyr\nhttps://dplyr.tidyverse.org\nforcats\nhttps://forcats.tidyverse.org\nferriswheels\nhttps://github.com/EmilHvitfeldt/ferriswheels\nhere\nhttps://here.r-lib.org"
+  },
+  {
     "objectID": "content/03-programming/index.html",
     "href": "content/03-programming/index.html",
     "title": "Programming in R",
@@ -75,90 +257,6 @@
     "title": "Programming in R",
     "section": "Resources",
     "text": "Resources\n\nReading\n\nEfficient Programming, from Efficient R by Colin Gillespie and Robin Lovelace\nhttps://csgillespie.github.io/efficientR/programming.html\nChapters on functions and iteration, from R for Data Science by Hadley Wickham and Garrett Grolemund\nhttps://r4ds.had.co.nz/index.html\nhttps://r4ds.had.co.nz/functions.html\nhttps://r4ds.had.co.nz/iteration.html"
-  },
-  {
-    "objectID": "slides/05-graphics/index.html#overview",
-    "href": "slides/05-graphics/index.html#overview",
-    "title": "SESSION TITLE",
-    "section": "Overview",
-    "text": "Overview\n\nWhat we’re covering"
-  },
-  {
-    "objectID": "slides/05-graphics/index.html#resources",
-    "href": "slides/05-graphics/index.html#resources",
-    "title": "SESSION TITLE",
-    "section": "Resources",
-    "text": "Resources\nMaterial inspired by and remixed from:"
-  },
-  {
-    "objectID": "slides/05-graphics/index.html#license",
-    "href": "slides/05-graphics/index.html#license",
-    "title": "SESSION TITLE",
-    "section": "License",
-    "text": "License\nLicensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
-  },
-  {
-    "objectID": "slides/06-quarto/index.html#overview",
-    "href": "slides/06-quarto/index.html#overview",
-    "title": "SESSION TITLE",
-    "section": "Overview",
-    "text": "Overview\n\nWhat we’re covering"
-  },
-  {
-    "objectID": "slides/06-quarto/index.html#resources",
-    "href": "slides/06-quarto/index.html#resources",
-    "title": "SESSION TITLE",
-    "section": "Resources",
-    "text": "Resources\nMaterial inspired by and remixed from:"
-  },
-  {
-    "objectID": "slides/06-quarto/index.html#license",
-    "href": "slides/06-quarto/index.html#license",
-    "title": "SESSION TITLE",
-    "section": "License",
-    "text": "License\nLicensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
-  },
-  {
-    "objectID": "slides/01-intro/index.html#overview",
-    "href": "slides/01-intro/index.html#overview",
-    "title": "SESSION TITLE",
-    "section": "Overview",
-    "text": "Overview\n\nWhat we’re covering"
-  },
-  {
-    "objectID": "slides/01-intro/index.html#resources",
-    "href": "slides/01-intro/index.html#resources",
-    "title": "SESSION TITLE",
-    "section": "Resources",
-    "text": "Resources\nMaterial inspired by and remixed from:"
-  },
-  {
-    "objectID": "slides/01-intro/index.html#license",
-    "href": "slides/01-intro/index.html#license",
-    "title": "SESSION TITLE",
-    "section": "License",
-    "text": "License\nLicensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
-  },
-  {
-    "objectID": "slides/02-data-wrangling/index.html#overview",
-    "href": "slides/02-data-wrangling/index.html#overview",
-    "title": "SESSION TITLE",
-    "section": "Overview",
-    "text": "Overview\n\nWhat we’re covering"
-  },
-  {
-    "objectID": "slides/02-data-wrangling/index.html#resources",
-    "href": "slides/02-data-wrangling/index.html#resources",
-    "title": "SESSION TITLE",
-    "section": "Resources",
-    "text": "Resources\nMaterial inspired by and remixed from:"
-  },
-  {
-    "objectID": "slides/02-data-wrangling/index.html#license",
-    "href": "slides/02-data-wrangling/index.html#license",
-    "title": "SESSION TITLE",
-    "section": "License",
-    "text": "License\nLicensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
   },
   {
     "objectID": "index.html",
@@ -196,164 +294,290 @@
     "text": "Prerequistes\nPlease see the prerequisites page for details on getting set up in advance of the first session."
   },
   {
-    "objectID": "slides/00-template/index.html#overview",
-    "href": "slides/00-template/index.html#overview",
+    "objectID": "slides/05-graphics/index.html#overview",
+    "href": "slides/05-graphics/index.html#overview",
     "title": "SESSION TITLE",
     "section": "Overview",
     "text": "Overview\n\nWhat we’re covering"
   },
   {
-    "objectID": "slides/00-template/index.html#resources",
-    "href": "slides/00-template/index.html#resources",
+    "objectID": "slides/05-graphics/index.html#resources",
+    "href": "slides/05-graphics/index.html#resources",
     "title": "SESSION TITLE",
     "section": "Resources",
     "text": "Resources\nMaterial inspired by and remixed from:"
   },
   {
-    "objectID": "slides/00-template/index.html#license",
-    "href": "slides/00-template/index.html#license",
+    "objectID": "slides/05-graphics/index.html#license",
+    "href": "slides/05-graphics/index.html#license",
     "title": "SESSION TITLE",
     "section": "License",
     "text": "License\nLicensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
   },
   {
-    "objectID": "slides/03-programming/index.html#overview",
-    "href": "slides/03-programming/index.html#overview",
+    "objectID": "slides/01-intro/index.html#overview",
+    "href": "slides/01-intro/index.html#overview",
+    "title": "Introduction to R and RStudio",
+    "section": "Overview",
+    "text": "Overview\n\nWhy use R?\nUse RStudio to write and run R programmes\nCreate and start an R project\nUse install.packages() to install packages\nHow to get help in R\nSee examples of data wrangling and visualisation"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#what-can-r-do",
+    "href": "slides/01-intro/index.html#what-can-r-do",
+    "title": "Introduction to R and RStudio",
+    "section": "What can R do?",
+    "text": "What can R do?\n\n\n\nData import\nData management and wrangling\nExploratory data analysis\nStatistical modelling\nAdvanced statistics\nMachine learning\n\n\n\nData visualisation\nReports, articles\nDashboards, web apps\nIntegrates well with other languages\nPackages: share your code and use others"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#the-r-ecosystem",
+    "href": "slides/01-intro/index.html#the-r-ecosystem",
+    "title": "Introduction to R and RStudio",
+    "section": "The R Ecosystem",
+    "text": "The R Ecosystem\nBase R\n\n\n15 base packages\n\nCreate R objects\nSummaries\nMaths functions\nStatistics\nGraphics\nDatasets\n\n\n15 recommended packages\n\nStatistics methodology\nMore maths\nMore graphics\n\n\n\nR is distributed with fifteen “base packages”: base, compiler, datasets, grDevices, graphics, grid, methods, parallel, splines, stats, stats4, tcltk, tools, translations, and utils.\nIn addition, there are fifteen “recommended packages” from CRAN which are included with binary distributions of R: KernSmooth, MASS, Matrix, boot, class, cluster, codetools, foreign, lattice, mgcv, nlme, nnet, rpart, spatial, and survival.\nhttps://en.wikipedia.org/wiki/R_package#Base_and_recommended_packages"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#the-r-ecosystem-1",
+    "href": "slides/01-intro/index.html#the-r-ecosystem-1",
+    "title": "Introduction to R and RStudio",
+    "section": "The R Ecosystem",
+    "text": "The R Ecosystem\nContributed packages\n\n\nCRAN\n\nOfficial R repository\nhttps://cran.r-project.org\nnearly 20000 packages\n\n\nBioconductor\n\nBioinformatics packages\nhttps://www.bioconductor.org\n~2100 packages\n\n\nGitHub\n\nPackages in development\nGitHub-only packages"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#the-tidyverse",
+    "href": "slides/01-intro/index.html#the-tidyverse",
+    "title": "Introduction to R and RStudio",
+    "section": "The tidyverse",
+    "text": "The tidyverse\nThe tidyverse is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar and data structures.\n\nFrom https://education.rstudio.com/blog/2020/07/teaching-the-tidyverse-in-2020-part-1-getting-started/tidyverse 2.0.0. includes lubridate for date-times as well (not shown in image)."
+  },
+  {
+    "objectID": "slides/01-intro/index.html#palmerpenguins",
+    "href": "slides/01-intro/index.html#palmerpenguins",
+    "title": "Introduction to R and RStudio",
+    "section": "palmerpenguins",
+    "text": "palmerpenguins\n\npalmerpenguins is a dataset package, designed to be a great example for data exploration and visualisation.\nIt contains measurement data for 344 penguins, from three different species, collected from three islands in the Palmer Archipelago, Antarctica.\n\n\nPenguin artwork by Allison Horst https://allisonhorst.github.io/palmerpenguins/articles/art.html"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#the-r-community",
+    "href": "slides/01-intro/index.html#the-r-community",
+    "title": "Introduction to R and RStudio",
+    "section": "The R community",
+    "text": "The R community\nAnother reason to love R is the community around it.\nIt prides itself on being friendly, diverse, helpful, and supportive.\n\nR user groups, especially Warwick RUG\nRLadies, especially RLadies Coventry\nRStudio Community\nR for Data Science\n#RStats and #TidyTuesday on Mastodon\nrainbowR (LGBTQ+)\nMiR (minorities in R)"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#at-first",
+    "href": "slides/01-intro/index.html#at-first",
+    "title": "Introduction to R and RStudio",
+    "section": "At first",
+    "text": "At first"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#with-script",
+    "href": "slides/01-intro/index.html#with-script",
+    "title": "Introduction to R and RStudio",
+    "section": "With script",
+    "text": "With script\n RStudio cheatsheet"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#best-practice-use-r-projects",
+    "href": "slides/01-intro/index.html#best-practice-use-r-projects",
+    "title": "Introduction to R and RStudio",
+    "section": "Best practice: use R projects",
+    "text": "Best practice: use R projects\nAn RStudio project is a contect for working on a specific project\n\nKeeps files well-organised\nAutomatically sets working directory to project root\nHas separate workspace and command history\nWorks well with version control via git or svn"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#getting-started-with-projects",
+    "href": "slides/01-intro/index.html#getting-started-with-projects",
+    "title": "Introduction to R and RStudio",
+    "section": "Getting started with projects",
+    "text": "Getting started with projects\n\nCreate a project from a new or existing directory via the file menu or new project button\nSwitch project, or open a different project in a new RStudio instance via the project menu"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#rstudio-project-demo",
+    "href": "slides/01-intro/index.html#rstudio-project-demo",
+    "title": "Introduction to R and RStudio",
+    "section": "RStudio project demo",
+    "text": "RStudio project demo\n\nCreate R-Foundations project\nCreate first script"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#using-the-console",
+    "href": "slides/01-intro/index.html#using-the-console",
+    "title": "Introduction to R and RStudio",
+    "section": "Using the console",
+    "text": "Using the console\n\nFor things that only need doing once, e.g. installing packages\nFor doing things you don’t need to track, e.g. requesting help files\nTo quickly explore new ideas before adding them to a script"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#using-the-console-shortcuts",
+    "href": "slides/01-intro/index.html#using-the-console-shortcuts",
+    "title": "Introduction to R and RStudio",
+    "section": "Using the console: shortcuts",
+    "text": "Using the console: shortcuts\nRStudio provides a few shortcuts to help write code in the R console\n\n↑/↓ go back/forward through history one command at a time\nCtrl/⌘ + ↑ review recent history and select command\nTab view possible completions for part-written expression\n\nCode completion (using Tab) is also provided in the source editor"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#using-the-console-demo",
+    "href": "slides/01-intro/index.html#using-the-console-demo",
+    "title": "Introduction to R and RStudio",
+    "section": "Using the console: demo",
+    "text": "Using the console: demo\n1 + 1\n?log\nlog(10)\nexp(-4 * 4 / 2) / sqrt(2 * pi)\ninstall.packages(\"tidyverse\")\ninstall.packages(\"palmerpenguins\")"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#using-scripts",
+    "href": "slides/01-intro/index.html#using-scripts",
+    "title": "Introduction to R and RStudio",
+    "section": "Using scripts",
+    "text": "Using scripts\nText files saved with an .R suffix are recognised as R code\nCode can be sent directly from a script to the console as follows:\n\nCtrl/⌘ + ↵ or  run current line\n\nRun multiple lines by selecting first\n\nCtrl/⌘ + Shift + ↵ or \n\nRun the script from start to finish."
+  },
+  {
+    "objectID": "slides/01-intro/index.html#why-r-scripts",
+    "href": "slides/01-intro/index.html#why-r-scripts",
+    "title": "Introduction to R and RStudio",
+    "section": "Why R scripts?",
+    "text": "Why R scripts?\nWriting an R script for an analysis has several advantages over a graphical user interface (GUI)\n\nIt provides a record of the exact approach used in an analysis\nIt enables the analysis to be easily reproduced and modified\nIt allows greater control"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#good-practice-for-r-scripts",
+    "href": "slides/01-intro/index.html#good-practice-for-r-scripts",
+    "title": "Introduction to R and RStudio",
+    "section": "Good practice for R Scripts",
+    "text": "Good practice for R Scripts\nOrganising your R script well will help you and others understand and use it.\n\nAdd comment or two at start to describe purpose of script\n\nUse one or more # to start a comment\n\nLoad required data and packages at the start\nAvoid hard-coding: define variables such as file paths early on\nGive functions and variable meaningful names\nuse ### or #--- to separate sections (in RStudio Code &gt; Insert Section)"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#installing-packages",
+    "href": "slides/01-intro/index.html#installing-packages",
+    "title": "Introduction to R and RStudio",
+    "section": "Installing packages",
+    "text": "Installing packages\nIn console\n\nInstall a package with install.packages(\"package_name\")\n\nWatch out for the plural!\n\nInstall multiple packages with install.packages(c(\"package1\", \"package2\"))\n\nThe c() function creates a vector\n\nOr use install button in packages pane:"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#loading-packages",
+    "href": "slides/01-intro/index.html#loading-packages",
+    "title": "Introduction to R and RStudio",
+    "section": "Loading packages",
+    "text": "Loading packages\nIn script\n\nLoad packages with library(package_name)"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#r-script-demo",
+    "href": "slides/01-intro/index.html#r-script-demo",
+    "title": "Introduction to R and RStudio",
+    "section": "R script demo",
+    "text": "R script demo\n### load packages\nlibrary(palmerpenguins)\nlibrary(tidyverse)\n\n### Inspect data\nView(penguins)\nglimpse(penguins)\nhead(penguins)\nsummary(penguins)"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#within-r-help-with-functions",
+    "href": "slides/01-intro/index.html#within-r-help-with-functions",
+    "title": "Introduction to R and RStudio",
+    "section": "Within R: Help with functions",
+    "text": "Within R: Help with functions\n\n# help with a specific function\nhelp(function_name)\n?function_name\n\n# quick reminder of the function arguments\narg(function_name)\n\n# see an example\nexample(function_name)\n\n# see the source code\n## in console\nfunction_name\n## in View pane (easier to read, syntax highlighting)\nView(function_name)"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#within-r-help.search",
+    "href": "slides/01-intro/index.html#within-r-help.search",
+    "title": "Introduction to R and RStudio",
+    "section": "Within R: help.search",
+    "text": "Within R: help.search\n\n# when ?function_name fails (e.g. don't have package loaded)\nhelp.search(\"function_name\") # note quotation marks\n??function_name\n\n# for when you can't quite remember the function name\n??something_like_function_name\n\n# R help start page\nhelp.start()\n## note that using the RStudio Help home button gives even more resources"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#within-r-help-with-package",
+    "href": "slides/01-intro/index.html#within-r-help-with-package",
+    "title": "Introduction to R and RStudio",
+    "section": "Within R: Help with package",
+    "text": "Within R: Help with package\n\n# `help`\nhelp(package = \"package_name\")\n# Help panel in RStudio will give links to all documentation\n# and help pages for that package\n\n# find/browse vignettes for installed (or specific) packages\nbrowseVignettes()\nbrowseVignettes(\"package_name\")\n\n# use auto-completion in RStudio to see what functions \n# are in a package\n?package::\n\ndplyr demo\nRStudio Help home demo"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#your-turn",
+    "href": "slides/01-intro/index.html#your-turn",
+    "title": "Introduction to R and RStudio",
+    "section": "Your turn",
+    "text": "Your turn\n\nCreate an R project called “R-foundations”\nInstall the packages palmerpenguins and tidyverse\nFind the help page for the penguins dataset\nFind the help page for the filter function in the dplyr package\nExperiment typing commands into the console or in an R script.\n\nlink to slides"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#getting-help-at-warwick",
+    "href": "slides/01-intro/index.html#getting-help-at-warwick",
+    "title": "Introduction to R and RStudio",
+    "section": "Getting help at Warwick",
+    "text": "Getting help at Warwick\nDuring the course\n\nClinic hours: Thursday 10-11 in weeks 3, 5 and 9.\n\nIn general\n\nThe Warwick R Users Viva Engage"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#the-data",
+    "href": "slides/01-intro/index.html#the-data",
+    "title": "Introduction to R and RStudio",
+    "section": "The data",
+    "text": "The data\n\n\nlibrary(palmerpenguins)\nlibrary(tidyverse)\n\n\npenguins\n\n# A tibble: 344 × 8\n   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n 1 Adelie  Torgersen           39.1          18.7               181        3750\n 2 Adelie  Torgersen           39.5          17.4               186        3800\n 3 Adelie  Torgersen           40.3          18                 195        3250\n 4 Adelie  Torgersen           NA            NA                  NA          NA\n 5 Adelie  Torgersen           36.7          19.3               193        3450\n 6 Adelie  Torgersen           39.3          20.6               190        3650\n 7 Adelie  Torgersen           38.9          17.8               181        3625\n 8 Adelie  Torgersen           39.2          19.6               195        4675\n 9 Adelie  Torgersen           34.1          18.1               193        3475\n10 Adelie  Torgersen           42            20.2               190        4250\n# ℹ 334 more rows\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#how-many-of-each-species",
+    "href": "slides/01-intro/index.html#how-many-of-each-species",
+    "title": "Introduction to R and RStudio",
+    "section": "How many of each species?",
+    "text": "How many of each species?\n\ncount(penguins, species)\n\n# A tibble: 3 × 2\n  species       n\n  &lt;fct&gt;     &lt;int&gt;\n1 Adelie      152\n2 Chinstrap    68\n3 Gentoo      124"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#how-many-of-each-species-on-each-island",
+    "href": "slides/01-intro/index.html#how-many-of-each-species-on-each-island",
+    "title": "Introduction to R and RStudio",
+    "section": "How many of each species on each island?",
+    "text": "How many of each species on each island?\n\ncount(penguins, species, island, .drop = FALSE)\n\n# A tibble: 9 × 3\n  species   island        n\n  &lt;fct&gt;     &lt;fct&gt;     &lt;int&gt;\n1 Adelie    Biscoe       44\n2 Adelie    Dream        56\n3 Adelie    Torgersen    52\n4 Chinstrap Biscoe        0\n5 Chinstrap Dream        68\n6 Chinstrap Torgersen     0\n7 Gentoo    Biscoe      124\n8 Gentoo    Dream         0\n9 Gentoo    Torgersen     0"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#show-me-the-bill-dimensions-of-the-5-heaviest-female-gentoo-penguins",
+    "href": "slides/01-intro/index.html#show-me-the-bill-dimensions-of-the-5-heaviest-female-gentoo-penguins",
+    "title": "Introduction to R and RStudio",
+    "section": "Show me the bill dimensions of the 5 heaviest female Gentoo penguins",
+    "text": "Show me the bill dimensions of the 5 heaviest female Gentoo penguins\n\npenguins |&gt;\n  filter(sex == \"female\",\n         species == \"Gentoo\") |&gt;\n  slice_max(body_mass_g, n = 5) |&gt;\n  select(contains(\"bill\"))\n\n# A tibble: 5 × 2\n  bill_length_mm bill_depth_mm\n           &lt;dbl&gt;         &lt;dbl&gt;\n1           46.5          14.8\n2           45.2          14.8\n3           49.1          14.8\n4           44.9          13.3\n5           45.1          14.5"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#the-native-pipe",
+    "href": "slides/01-intro/index.html#the-native-pipe",
+    "title": "Introduction to R and RStudio",
+    "section": "The native pipe",
+    "text": "The native pipe\n|&gt; is a pipe.\nIt passes what comes before into the first argument of what comes after.\nPipes are a powerful tool for clearly expressing a sequence of multiple operations.\nWe’ll talk more about pipes in the data wrangling session."
+  },
+  {
+    "objectID": "slides/01-intro/index.html#whats-the-mean-bill-length-by-species",
+    "href": "slides/01-intro/index.html#whats-the-mean-bill-length-by-species",
+    "title": "Introduction to R and RStudio",
+    "section": "What’s the mean bill length, by species?",
+    "text": "What’s the mean bill length, by species?\n\npenguins |&gt;\n  summarise(mean_bill_length = mean(bill_length_mm, na.rm = TRUE),\n            .by = species)\n\n# A tibble: 3 × 2\n  species   mean_bill_length\n  &lt;fct&gt;                &lt;dbl&gt;\n1 Adelie                38.8\n2 Gentoo                47.5\n3 Chinstrap             48.8"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#whats-the-relationship-between-bill-length-and-depth",
+    "href": "slides/01-intro/index.html#whats-the-relationship-between-bill-length-and-depth",
+    "title": "Introduction to R and RStudio",
+    "section": "What’s the relationship between bill length and depth?",
+    "text": "What’s the relationship between bill length and depth?\n\npictureplot 1code 1plot 2code 2what?\n\n\n\n\n\nArtwork by Allison Horst https://allisonhorst.github.io/palmerpenguins/articles/art.html\n\n\n\n\n\n\n\n\nggplot(data = penguins,\n       aes(x = bill_length_mm,\n           y = bill_depth_mm)) +\n  geom_point() +\n  geom_smooth(method = \"lm\", se = FALSE, color = \"gray50\") +\n  labs(title = \"Penguin bill dimensions\",\n       subtitle = \"Bill length and depth for Penguins at Palmer Station LTER\",\n       x = \"Bill length (mm)\",\n       y = \"Bill depth (mm)\") +\n  theme_minimal() + \n  theme(plot.title.position = \"plot\")\n\n\n\n\n\n\n\nggplot(data = penguins,\n       aes(x = bill_length_mm,\n           y = bill_depth_mm,\n           group = species)) +\n  geom_point(aes(color = species, \n                 shape = species),\n             size = 3,\n             alpha = 0.8) +\n  geom_smooth(method = \"lm\", se = FALSE, aes(color = species)) +\n  scale_color_manual(values = c(\"darkorange\",\"purple\",\"cyan4\")) +\n  labs(title = \"Penguin bill dimensions\",\n       subtitle = \"Bill length and depth for Adelie, Chinstrap and Gentoo Penguins at Palmer Station LTER\",\n       x = \"Bill length (mm)\",\n       y = \"Bill depth (mm)\",\n       color = \"Penguin species\",\n       shape = \"Penguin species\") +\n  theme_minimal() +\n  theme(plot.title.position = \"plot\",\n        plot.subtitle = element_text(size = rel(0.95)))\n\n\n\nThis is an illustration of Simpson’s Paradox.\n\nSimpson’s paradox is a phenomenon in probability and statistics in which a trend appears in several groups of data but disappears or reverses when the groups are combined.\n\n\n\n\nExample adapted from https://allisonhorst.github.io/palmerpenguins/articles/examples.html"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#resources",
+    "href": "slides/01-intro/index.html#resources",
+    "title": "Introduction to R and RStudio",
+    "section": "Resources",
+    "text": "Resources\nMaterial inspired by and remixed from:\n\nhttps://www.heatherturner.net/teaching/zero-to-hero/#1\nhttps://ellakaye.github.io/Rladies-Coventry-getting-help-in-R/getting_help_in_R.html#1\nhttps://portal.stats.ox.ac.uk/userdata/ruth/APTS2013/Rcourse1.pdf\nhttps://carpentries-incubator.github.io/r-tidyverse-4-datasets/"
+  },
+  {
+    "objectID": "slides/01-intro/index.html#license",
+    "href": "slides/01-intro/index.html#license",
+    "title": "Introduction to R and RStudio",
+    "section": "License",
+    "text": "License\nLicensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
+  },
+  {
+    "objectID": "slides/06-quarto/index.html#overview",
+    "href": "slides/06-quarto/index.html#overview",
     "title": "SESSION TITLE",
     "section": "Overview",
     "text": "Overview\n\nWhat we’re covering"
   },
   {
-    "objectID": "slides/03-programming/index.html#resources",
-    "href": "slides/03-programming/index.html#resources",
+    "objectID": "slides/06-quarto/index.html#resources",
+    "href": "slides/06-quarto/index.html#resources",
     "title": "SESSION TITLE",
     "section": "Resources",
     "text": "Resources\nMaterial inspired by and remixed from:"
   },
   {
-    "objectID": "slides/03-programming/index.html#license",
-    "href": "slides/03-programming/index.html#license",
+    "objectID": "slides/06-quarto/index.html#license",
+    "href": "slides/06-quarto/index.html#license",
     "title": "SESSION TITLE",
     "section": "License",
     "text": "License\nLicensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
-  },
-  {
-    "objectID": "slides/04-sim-optim/index.html#overview",
-    "href": "slides/04-sim-optim/index.html#overview",
-    "title": "SESSION TITLE",
-    "section": "Overview",
-    "text": "Overview\n\nWhat we’re covering"
-  },
-  {
-    "objectID": "slides/04-sim-optim/index.html#resources",
-    "href": "slides/04-sim-optim/index.html#resources",
-    "title": "SESSION TITLE",
-    "section": "Resources",
-    "text": "Resources\nMaterial inspired by and remixed from:"
-  },
-  {
-    "objectID": "slides/04-sim-optim/index.html#license",
-    "href": "slides/04-sim-optim/index.html#license",
-    "title": "SESSION TITLE",
-    "section": "License",
-    "text": "License\nLicensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
-  },
-  {
-    "objectID": "content/02-data-wrangling/index.html",
-    "href": "content/02-data-wrangling/index.html",
-    "title": "Data types, stuctures, and wrangling",
-    "section": "",
-    "text": "Note\n\n\n\nThis page and the slides for this session are still under development"
-  },
-  {
-    "objectID": "content/02-data-wrangling/index.html#todo",
-    "href": "content/02-data-wrangling/index.html#todo",
-    "title": "Data types, stuctures, and wrangling",
-    "section": "TODO",
-    "text": "TODO\n\nUpdate TITLE\nUpdate date\nFill in resources\nchange draft to false"
-  },
-  {
-    "objectID": "content/02-data-wrangling/index.html#slides",
-    "href": "content/02-data-wrangling/index.html#slides",
-    "title": "Data types, stuctures, and wrangling",
-    "section": "Slides",
-    "text": "Slides\nHere’s a link to the slides in a new window.\nHere are the slides embedded:"
-  },
-  {
-    "objectID": "content/02-data-wrangling/index.html#resources",
-    "href": "content/02-data-wrangling/index.html#resources",
-    "title": "Data types, stuctures, and wrangling",
-    "section": "Resources",
-    "text": "Resources\n\nR and RStudio\n\nRStudio cheatsheets\ndplyr cheatsheet\nR for data science book\n\n\n\nPackages\n\ndplyr\nhttps://dplyr.tidyverse.org\nforcats\nhttps://forcats.tidyverse.org\nferriswheels\nhttps://github.com/EmilHvitfeldt/ferriswheels\nhere\nhttps://here.r-lib.org"
-  },
-  {
-    "objectID": "content/01-intro/index.html",
-    "href": "content/01-intro/index.html",
-    "title": "Introduction to R and RStudio",
-    "section": "",
-    "text": "Note\n\n\n\nThis page and the slides for this session are still under development"
-  },
-  {
-    "objectID": "content/01-intro/index.html#slides",
-    "href": "content/01-intro/index.html#slides",
-    "title": "Introduction to R and RStudio",
-    "section": "Slides",
-    "text": "Slides\nHere’s a link to the slides in a new window.\nHere are the slides embedded:"
-  },
-  {
-    "objectID": "content/01-intro/index.html#resources",
-    "href": "content/01-intro/index.html#resources",
-    "title": "Introduction to R and RStudio",
-    "section": "Resources",
-    "text": "Resources\n\nR and RStudio\n\nRStudio IDE cheatsheet\nhttps://rstudio.github.io/cheatsheets/html/rstudio-ide.html\nBeginner resources from the RStudio Education team\nhttps://education.rstudio.com/learn/beginner/\nIntroduction to R and RStudio from the Carpentries\nhttps://carpentries-incubator.github.io/r-tidyverse-4-datasets/01-project-introduction.html\n\n\n\nPackages\n\ntidyverse\nhttps://www.tidyverse.org\npalmerpenguins\nhttps://allisonhorst.github.io/palmerpenguins/index.html"
-  },
-  {
-    "objectID": "content/06-quarto/index.html",
-    "href": "content/06-quarto/index.html",
-    "title": "Quarto",
-    "section": "",
-    "text": "Note\n\n\n\nThis page and the slides for this session are still under development"
-  },
-  {
-    "objectID": "content/06-quarto/index.html#slides",
-    "href": "content/06-quarto/index.html#slides",
-    "title": "Quarto",
-    "section": "Slides",
-    "text": "Slides\nHere’s a link to the slides in a new window.\nHere are the slides embedded:"
-  },
-  {
-    "objectID": "content/06-quarto/index.html#resources",
-    "href": "content/06-quarto/index.html#resources",
-    "title": "Quarto",
-    "section": "Resources",
-    "text": "Resources\n\nReading\n\nhttps://quarto.org: The official documentation\nAwesome Quarto: A curated list of Quarto talks, tools, examples & articles\nBeautiful Reports and Persentations with Quarto\nGetting Started with Quarto workshop website\nQuarto for R and RStudio workshop"
-  },
-  {
-    "objectID": "content/05-graphics/index.html",
-    "href": "content/05-graphics/index.html",
-    "title": "Graphics",
-    "section": "",
-    "text": "Note\n\n\n\nThis page and the slides for this session are still under development"
-  },
-  {
-    "objectID": "content/05-graphics/index.html#slides",
-    "href": "content/05-graphics/index.html#slides",
-    "title": "Graphics",
-    "section": "Slides",
-    "text": "Slides\nHere’s a link to the slides in a new window.\nHere are the slides embedded:"
-  },
-  {
-    "objectID": "content/05-graphics/index.html#resources",
-    "href": "content/05-graphics/index.html#resources",
-    "title": "Graphics",
-    "section": "Resources",
-    "text": "Resources\n\nReading\n\nggplot2: Elegant Graphics for Data Analysis (for an in-depth understanding)\nR for Data Science book: Chapters 3: Data Visualisation and 28: Graphics for Communication, to get up and running quickly\nPlotting anything with ggplot2 webinar with Thomas Lin Pederson (one of the main ggplot2 authors)\nR graphics cookbook, a practical guide that provides more than 150 recipes to help you generate high-quality graphs quickly\nCedric Scherer’s tutorial\nCedric Scherer’s ‘Engaging and Beautiful Data Visualizations with ggplot2’ workshop\nggplot2 reference\n\n\n\nPackages\n\nggplot2\nhttps://ggplot2.tidyverse.org\ngt\nhttps://gt.rstudio.com\ngtsummary\nhttps://www.danieldsjoberg.com/gtsummary/"
-  },
-  {
-    "objectID": "schedule.html",
-    "href": "schedule.html",
-    "title": "Schedule",
-    "section": "",
-    "text": "This course is taking place in Term 1, 2024.\nIt takes place in weeks 4, 6 and 8, on Mondays from 10:30-12:30 and Thursdays from 12:30-14:00.\nFor dates, see the content page.\n\n\n\nWeek\nMonday 10:30-12:00\nThursday 12:30-14:00\n\n\n\n\n4\nIntroduction to R and RStudio\nData Types, Structures and Wrangling\n\n\n6\nProgramming in R\nSimulation and Optimisation\n\n\n8\nGraphics\nQuarto"
   }
 ]
