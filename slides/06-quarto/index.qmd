@@ -407,11 +407,11 @@ format:
 
 | Destination                            | Description                                                                                                                                                                                     |
 |----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Quarto Pub](quarto-pub.qmd)           | Publishing service for Quarto documents, websites, and books.                                         |
-| [GitHub Pages](github-pages.qmd)       | Publish content based on source code managed within a GitHub repository.                              |     
-| [Posit Connect](rstudio-connect.qmd) | Publishing platform for secure sharing of data products within an organization.  |
-| [Netlify](netlify.qmd)                 | Professional web publishing platform.                         | 
-| [Confluence](confluence.qmd)         | Publishing platform for supporting team collaboration.  
+| [Quarto Pub](https://quarto.org/docs/publishing/quarto-pub.html)           | Publishing service for Quarto documents, websites, and books.                                         |
+| [GitHub Pages](https://quarto.org/docs/publishing/github-pages.html)       | Publish content based on source code managed within a GitHub repository.                              |     
+| [Posit Connect](https://quarto.org/docs/publishing/rstudio-connect.html) | Publishing platform for secure sharing of data products within an organization.  |
+| [Netlify](https://quarto.org/docs/publishing/netlify.html)                 | Professional web publishing platform.                         | 
+| [Confluence](https://quarto.org/docs/publishing/confluence.html)         | Publishing platform for supporting team collaboration.  
 
 ... and more.
 
