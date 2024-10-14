@@ -3,9 +3,6 @@ title: Quarto
 date: 2024-11-21
 ---
 
-:::{.callout-note}
-This page and the slides for this session are still under development
-:::
 
 ## Slides
 

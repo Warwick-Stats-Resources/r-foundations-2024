@@ -3,17 +3,6 @@ title: Data types, stuctures, and wrangling
 date: 2024-10-24
 ---
 
-:::{.callout-note}
-This page and the slides for this session are still under development
-:::
-
-## TODO
-
-- Update TITLE
-- Update date
-- Fill in resources
-- change `draft` to `false`
-
 ## Slides
 
 Here's a link to the [slides](/slides/02-data-wrangling/index.qmd){target="_blank"} in a new window. 

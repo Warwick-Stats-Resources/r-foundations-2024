@@ -3,10 +3,6 @@ title: Graphics
 date: 2024-11-18
 ---
 
-:::{.callout-note}
-This page and the slides for this session are still under development
-:::
-
 ## Slides
 
 Here's a link to the [slides](/slides/05-graphics/index.qmd){target="_blank"} in a new window. 
