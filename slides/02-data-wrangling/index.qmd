@@ -610,8 +610,6 @@ count() and summarise(n = n()) give different orderings
 
 - Explore the `wheels` data!
 
-- Be ready to share some of your code in the chat
-
 ## tidydatatutor.com
 
 [Tidy Data Tutor](https://tidydatatutor.com){target="_blank"} lets you write R and Tidyverse code in your browser and see how your data frame changes at each step of a data analysis pipeline.
