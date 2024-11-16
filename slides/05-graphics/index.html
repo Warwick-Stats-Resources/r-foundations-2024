@@ -571,7 +571,7 @@ see '?methods' for accessing help and source code</code></pre>
 <p>Can you do the same with the <code>lines()</code> function? What are the similarities and differences?</p>
 </section></section>
 <section>
-<section id="ggplot2" class="title-slide slide level1 center" data-background-color="#552D62">
+<section id="ggplot2" class="title-slide slide level1 inverse center">
 <h1>ggplot2</h1>
 
 </section>
@@ -912,7 +912,7 @@ see '?methods' for accessing help and source code</code></pre>
 </ul>
 </section></section>
 <section>
-<section id="plots-in-rstudio" class="title-slide slide level1 center" data-background-color="#552D62">
+<section id="plots-in-rstudio" class="title-slide slide level1 inverse center">
 <h1>Plots in RStudio</h1>
 
 </section>
@@ -924,7 +924,7 @@ see '?methods' for accessing help and source code</code></pre>
 <p><strong>DEMO</strong></p>
 </section></section>
 <section>
-<section id="tables" class="title-slide slide level1 center" data-background-color="#552D62">
+<section id="tables" class="title-slide slide level1 inverse center">
 <h1>Tables</h1>
 
 </section>
@@ -945,82 +945,49 @@ see '?methods' for accessing help and source code</code></pre>
 <h2>Parts of a gt table</h2>
 
 <img data-src="images/gt_parts_of_a_table.svg" class="r-stretch quarto-figure-center"><p class="caption">From <a href="https://gt.rstudio.com" class="uri">https://gt.rstudio.com</a></p></section>
-<section id="an-example" class="slide level2">
-<h2>An example</h2>
+<section id="getting-started" class="slide level2">
+<h2>Getting started</h2>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a><span class="fu">library</span>(gt)</span>
+<span id="cb27-2"><a></a></span>
+<span id="cb27-3"><a></a><span class="co"># Define the start and end dates for the data range</span></span>
+<span id="cb27-4"><a></a>start_date <span class="ot">&lt;-</span> <span class="st">"2010-06-07"</span></span>
+<span id="cb27-5"><a></a>end_date <span class="ot">&lt;-</span> <span class="st">"2010-06-14"</span></span>
+<span id="cb27-6"><a></a></span>
+<span id="cb27-7"><a></a><span class="co"># Create a gt table based on preprocessed `sp500` table data</span></span>
+<span id="cb27-8"><a></a>sp500 <span class="sc">|&gt;</span></span>
+<span id="cb27-9"><a></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(date <span class="sc">&gt;=</span> start_date <span class="sc">&amp;</span> date <span class="sc">&lt;=</span> end_date) <span class="sc">|&gt;</span></span>
+<span id="cb27-10"><a></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="sc">-</span>adj_close) <span class="sc">|&gt;</span></span>
+<span id="cb27-11"><a></a>  <span class="fu">gt</span>() <span class="sc">|&gt;</span></span>
+<span id="cb27-12"><a></a>  <span class="fu">tab_header</span>(</span>
+<span id="cb27-13"><a></a>    <span class="at">title =</span> <span class="st">"S&amp;P 500"</span>,</span>
+<span id="cb27-14"><a></a>    <span class="at">subtitle =</span> glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"{start_date} to {end_date}"</span>)</span>
+<span id="cb27-15"><a></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb27-16"><a></a>  <span class="fu">fmt_currency</span>() <span class="sc">|&gt;</span></span>
+<span id="cb27-17"><a></a>  <span class="fu">fmt_date</span>(<span class="at">columns =</span> date, <span class="at">date_style =</span> <span class="st">"wd_m_day_year"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb27-18"><a></a>  <span class="fu">fmt_number</span>(<span class="at">columns =</span> volume, <span class="at">suffixing =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 
-<img data-src="images/gt-penguins.png" width="411" class="r-stretch quarto-figure-center"><p class="caption">From Albert Rapp’s <a href="https://gt.albert-rapp.de">gt book</a></p></section>
-<section id="resources" class="slide level2">
-<h2>Resources</h2>
-<p>See the article <a href="https://gt.rstudio.com/articles/case-study-gtcars.html">Case Study: gtcars</a> for a thorough example of <strong>gt</strong>’s capabilities.</p>
-<p>See also Albert Rapp’s <a href="https://gt.albert-rapp.de">book on <strong>gt</strong></a>.</p>
 </section>
-<section id="guidelines-for-better-tables" class="slide level2">
-<h2>Guidelines for better tables</h2>
-<p>Having the technical know-how to code tables is one thing, making them look good and such that the reader can easily read the data is another!</p>
-<p><em>Highly</em> recommend this <a href="https://themockup.blog/posts/2020-09-04-10-table-rules-in-r/">Tom Mock guide</a>, based on Jon Schwabish’s original. It covers guidelines for making better tables, and shows how to implement them in <strong>gt</strong>. It demonstrates even more of what gt can do than the article on the previous slide.</p>
-</section>
-<section id="gtsummary" class="slide level2">
-<h2>gtsummary</h2>
-<p><a href="http://www.danieldsjoberg.com/gtsummary/"><strong>gtsummary</strong></a> extends the <strong>gt</strong> package and is used for summarising tables and working with statistical model summaries.</p>
-</section>
-<section id="gtsummary-example-1-data" class="slide level2">
-<h2>gtsummary example 1: data</h2>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a><span class="fu">library</span>(gtsummary)</span>
-<span id="cb27-2"><a></a><span class="co"># make dataset with a few variables to summarize</span></span>
-<span id="cb27-3"><a></a>trial2 <span class="ot">&lt;-</span> trial <span class="sc">|&gt;</span> <span class="fu">select</span>(age, grade, response, trt)</span>
-<span id="cb27-4"><a></a></span>
-<span id="cb27-5"><a></a><span class="fu">head</span>(trial2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 6 × 4
-    age grade response trt   
-  &lt;dbl&gt; &lt;fct&gt;    &lt;int&gt; &lt;chr&gt; 
-1    23 II           0 Drug A
-2     9 I            1 Drug B
-3    31 II           0 Drug A
-4    NA III          1 Drug A
-5    51 III          1 Drug A
-6    39 I            0 Drug B</code></pre>
-</div>
-</div>
-</section>
-<section id="gtsummary-example-1-code" class="slide level2">
-<h2>gtsummary example 1: code</h2>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a></a><span class="co"># summarize and augment the data</span></span>
-<span id="cb29-2"><a></a>summary_table <span class="ot">&lt;-</span> </span>
-<span id="cb29-3"><a></a>  <span class="fu">tbl_summary</span>(</span>
-<span id="cb29-4"><a></a>    trial2,</span>
-<span id="cb29-5"><a></a>    <span class="at">by =</span> trt, <span class="co"># split table by group</span></span>
-<span id="cb29-6"><a></a>    <span class="at">missing =</span> <span class="st">"no"</span> <span class="co"># don't list missing data separately</span></span>
-<span id="cb29-7"><a></a>  )  <span class="sc">|&gt;</span> </span>
-<span id="cb29-8"><a></a>  <span class="fu">add_n</span>() <span class="sc">|&gt;</span> <span class="co"># add column with total number of non-missing observations</span></span>
-<span id="cb29-9"><a></a>  <span class="fu">add_p</span>() <span class="sc">|&gt;</span> <span class="co"># test for a difference between groups</span></span>
-<span id="cb29-10"><a></a>  <span class="fu">modify_header</span>(<span class="at">label =</span> <span class="st">"**Variable**"</span>) <span class="sc">|&gt;</span> <span class="co"># update the column header</span></span>
-<span id="cb29-11"><a></a>  <span class="fu">bold_labels</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="gtsummary-example-1-output" class="slide level2">
-<h2>gtsummary example 1: output</h2>
-<div class="cell" data-layout-align="center">
+<section id="getting-started-output" class="slide level2 output-location-slide"><h2>Getting started</h2><div class="cell output-location-slide" data-layout-align="center">
 <div class="cell-output-display">
-<div id="uythvvvmfu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#uythvvvmfu table {
+<div id="xyyunzusuz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#xyyunzusuz table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#uythvvvmfu thead, #uythvvvmfu tbody, #uythvvvmfu tfoot, #uythvvvmfu tr, #uythvvvmfu td, #uythvvvmfu th {
+#xyyunzusuz thead, #xyyunzusuz tbody, #xyyunzusuz tfoot, #xyyunzusuz tr, #xyyunzusuz td, #xyyunzusuz th {
   border-style: none;
 }
 
-#uythvvvmfu p {
+#xyyunzusuz p {
   margin: 0;
   padding: 0;
 }
 
-#uythvvvmfu .gt_table {
+#xyyunzusuz .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1046,12 +1013,12 @@ see '?methods' for accessing help and source code</code></pre>
   border-left-color: #D3D3D3;
 }
 
-#uythvvvmfu .gt_caption {
+#xyyunzusuz .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#uythvvvmfu .gt_title {
+#xyyunzusuz .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1063,7 +1030,7 @@ see '?methods' for accessing help and source code</code></pre>
   border-bottom-width: 0;
 }
 
-#uythvvvmfu .gt_subtitle {
+#xyyunzusuz .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1075,7 +1042,7 @@ see '?methods' for accessing help and source code</code></pre>
   border-top-width: 0;
 }
 
-#uythvvvmfu .gt_heading {
+#xyyunzusuz .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1087,13 +1054,13 @@ see '?methods' for accessing help and source code</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#uythvvvmfu .gt_bottom_border {
+#xyyunzusuz .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#uythvvvmfu .gt_col_headings {
+#xyyunzusuz .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1108,7 +1075,7 @@ see '?methods' for accessing help and source code</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#uythvvvmfu .gt_col_heading {
+#xyyunzusuz .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1128,7 +1095,7 @@ see '?methods' for accessing help and source code</code></pre>
   overflow-x: hidden;
 }
 
-#uythvvvmfu .gt_column_spanner_outer {
+#xyyunzusuz .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1140,15 +1107,15 @@ see '?methods' for accessing help and source code</code></pre>
   padding-right: 4px;
 }
 
-#uythvvvmfu .gt_column_spanner_outer:first-child {
+#xyyunzusuz .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#uythvvvmfu .gt_column_spanner_outer:last-child {
+#xyyunzusuz .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#uythvvvmfu .gt_column_spanner {
+#xyyunzusuz .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1160,11 +1127,11 @@ see '?methods' for accessing help and source code</code></pre>
   width: 100%;
 }
 
-#uythvvvmfu .gt_spanner_row {
+#xyyunzusuz .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#uythvvvmfu .gt_group_heading {
+#xyyunzusuz .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1190,7 +1157,7 @@ see '?methods' for accessing help and source code</code></pre>
   text-align: left;
 }
 
-#uythvvvmfu .gt_empty_group_heading {
+#xyyunzusuz .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1205,15 +1172,15 @@ see '?methods' for accessing help and source code</code></pre>
   vertical-align: middle;
 }
 
-#uythvvvmfu .gt_from_md > :first-child {
+#xyyunzusuz .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#uythvvvmfu .gt_from_md > :last-child {
+#xyyunzusuz .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#uythvvvmfu .gt_row {
+#xyyunzusuz .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1232,7 +1199,7 @@ see '?methods' for accessing help and source code</code></pre>
   overflow-x: hidden;
 }
 
-#uythvvvmfu .gt_stub {
+#xyyunzusuz .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1245,7 +1212,7 @@ see '?methods' for accessing help and source code</code></pre>
   padding-right: 5px;
 }
 
-#uythvvvmfu .gt_stub_row_group {
+#xyyunzusuz .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1259,15 +1226,15 @@ see '?methods' for accessing help and source code</code></pre>
   vertical-align: top;
 }
 
-#uythvvvmfu .gt_row_group_first td {
+#xyyunzusuz .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#uythvvvmfu .gt_row_group_first th {
+#xyyunzusuz .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#uythvvvmfu .gt_summary_row {
+#xyyunzusuz .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1277,16 +1244,16 @@ see '?methods' for accessing help and source code</code></pre>
   padding-right: 5px;
 }
 
-#uythvvvmfu .gt_first_summary_row {
+#xyyunzusuz .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#uythvvvmfu .gt_first_summary_row.thick {
+#xyyunzusuz .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#uythvvvmfu .gt_last_summary_row {
+#xyyunzusuz .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1296,7 +1263,7 @@ see '?methods' for accessing help and source code</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#uythvvvmfu .gt_grand_summary_row {
+#xyyunzusuz .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1306,7 +1273,7 @@ see '?methods' for accessing help and source code</code></pre>
   padding-right: 5px;
 }
 
-#uythvvvmfu .gt_first_grand_summary_row {
+#xyyunzusuz .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1316,7 +1283,7 @@ see '?methods' for accessing help and source code</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#uythvvvmfu .gt_last_grand_summary_row_top {
+#xyyunzusuz .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1326,11 +1293,11 @@ see '?methods' for accessing help and source code</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#uythvvvmfu .gt_striped {
+#xyyunzusuz .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#uythvvvmfu .gt_table_body {
+#xyyunzusuz .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1339,7 +1306,7 @@ see '?methods' for accessing help and source code</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#uythvvvmfu .gt_footnotes {
+#xyyunzusuz .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1353,7 +1320,7 @@ see '?methods' for accessing help and source code</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#uythvvvmfu .gt_footnote {
+#xyyunzusuz .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1362,7 +1329,7 @@ see '?methods' for accessing help and source code</code></pre>
   padding-right: 5px;
 }
 
-#uythvvvmfu .gt_sourcenotes {
+#xyyunzusuz .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1376,7 +1343,7 @@ see '?methods' for accessing help and source code</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#uythvvvmfu .gt_sourcenote {
+#xyyunzusuz .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1384,72 +1351,658 @@ see '?methods' for accessing help and source code</code></pre>
   padding-right: 5px;
 }
 
-#uythvvvmfu .gt_left {
+#xyyunzusuz .gt_left {
   text-align: left;
 }
 
-#uythvvvmfu .gt_center {
+#xyyunzusuz .gt_center {
   text-align: center;
 }
 
-#uythvvvmfu .gt_right {
+#xyyunzusuz .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#uythvvvmfu .gt_font_normal {
+#xyyunzusuz .gt_font_normal {
   font-weight: normal;
 }
 
-#uythvvvmfu .gt_font_bold {
+#xyyunzusuz .gt_font_bold {
   font-weight: bold;
 }
 
-#uythvvvmfu .gt_font_italic {
+#xyyunzusuz .gt_font_italic {
   font-style: italic;
 }
 
-#uythvvvmfu .gt_super {
+#xyyunzusuz .gt_super {
   font-size: 65%;
 }
 
-#uythvvvmfu .gt_footnote_marks {
+#xyyunzusuz .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#uythvvvmfu .gt_asterisk {
+#xyyunzusuz .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#uythvvvmfu .gt_indent_1 {
+#xyyunzusuz .gt_indent_1 {
   text-indent: 5px;
 }
 
-#uythvvvmfu .gt_indent_2 {
+#xyyunzusuz .gt_indent_2 {
   text-indent: 10px;
 }
 
-#uythvvvmfu .gt_indent_3 {
+#xyyunzusuz .gt_indent_3 {
   text-indent: 15px;
 }
 
-#uythvvvmfu .gt_indent_4 {
+#xyyunzusuz .gt_indent_4 {
   text-indent: 20px;
 }
 
-#uythvvvmfu .gt_indent_5 {
+#xyyunzusuz .gt_indent_5 {
   text-indent: 25px;
 }
 
-#uythvvvmfu .katex-display {
+#xyyunzusuz .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#uythvvvmfu div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#xyyunzusuz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="header gt_heading">
+<th colspan="6" class="gt_heading gt_title gt_font_normal">S&amp;P 500</th>
+</tr>
+<tr class="odd gt_heading">
+<th colspan="6" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">2010-06-07 to 2010-06-14</th>
+</tr>
+<tr class="header gt_col_headings">
+<th id="date" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">date</th>
+<th id="open" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">open</th>
+<th id="high" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">high</th>
+<th id="low" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">low</th>
+<th id="close" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">close</th>
+<th id="volume" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">volume</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_right" headers="date">Mon, Jun 14, 2010</td>
+<td class="gt_row gt_right" headers="open">$1,095.00</td>
+<td class="gt_row gt_right" headers="high">$1,105.91</td>
+<td class="gt_row gt_right" headers="low">$1,089.03</td>
+<td class="gt_row gt_right" headers="close">$1,089.63</td>
+<td class="gt_row gt_right" headers="volume">4.43B</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="date">Fri, Jun 11, 2010</td>
+<td class="gt_row gt_right" headers="open">$1,082.65</td>
+<td class="gt_row gt_right" headers="high">$1,092.25</td>
+<td class="gt_row gt_right" headers="low">$1,077.12</td>
+<td class="gt_row gt_right" headers="close">$1,091.60</td>
+<td class="gt_row gt_right" headers="volume">4.06B</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="date">Thu, Jun 10, 2010</td>
+<td class="gt_row gt_right" headers="open">$1,058.77</td>
+<td class="gt_row gt_right" headers="high">$1,087.85</td>
+<td class="gt_row gt_right" headers="low">$1,058.77</td>
+<td class="gt_row gt_right" headers="close">$1,086.84</td>
+<td class="gt_row gt_right" headers="volume">5.14B</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="date">Wed, Jun 9, 2010</td>
+<td class="gt_row gt_right" headers="open">$1,062.75</td>
+<td class="gt_row gt_right" headers="high">$1,077.74</td>
+<td class="gt_row gt_right" headers="low">$1,052.25</td>
+<td class="gt_row gt_right" headers="close">$1,055.69</td>
+<td class="gt_row gt_right" headers="volume">5.98B</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="date">Tue, Jun 8, 2010</td>
+<td class="gt_row gt_right" headers="open">$1,050.81</td>
+<td class="gt_row gt_right" headers="high">$1,063.15</td>
+<td class="gt_row gt_right" headers="low">$1,042.17</td>
+<td class="gt_row gt_right" headers="close">$1,062.00</td>
+<td class="gt_row gt_right" headers="volume">6.19B</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="date">Mon, Jun 7, 2010</td>
+<td class="gt_row gt_right" headers="open">$1,065.84</td>
+<td class="gt_row gt_right" headers="high">$1,071.36</td>
+<td class="gt_row gt_right" headers="low">$1,049.86</td>
+<td class="gt_row gt_right" headers="close">$1,050.47</td>
+<td class="gt_row gt_right" headers="volume">5.47B</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div></section><section id="an-example" class="slide level2">
+<h2>An example</h2>
+
+<img data-src="images/gt-penguins.png" width="411" class="r-stretch quarto-figure-center"><p class="caption">From Albert Rapp’s <a href="https://gt.albert-rapp.de">gt book</a></p></section>
+<section id="resources" class="slide level2">
+<h2>Resources</h2>
+<p>See the article <a href="https://gt.rstudio.com/articles/case-study-gtcars.html">Case Study: gtcars</a> for a thorough example of <strong>gt</strong>’s capabilities.</p>
+<p>See also Albert Rapp’s <a href="https://gt.albert-rapp.de">book on <strong>gt</strong></a>.</p>
+</section>
+<section id="your-turn-2" class="slide level2">
+<h2>Your turn!</h2>
+<p>The {gt} package comes with several built-in datasets, including <code>exibble</code>, a <a href="https://gt.rstudio.com/reference/exibble.html">toy example tibble</a>.</p>
+<p>Install the {gt} package, look at <code>exibble</code>, then create a table of the data using {gt}.</p>
+<p>How good can you get it looking? You can consult the <a href="https://gt.rstudio.com/reference/index.html">reference section on the {gt} website</a> to see all the options available.</p>
+</section>
+<section id="guidelines-for-better-tables" class="slide level2">
+<h2>Guidelines for better tables</h2>
+<p>Having the technical know-how to code tables is one thing, making them look good and such that the reader can easily read the data is another!</p>
+<p><em>Highly</em> recommend this <a href="https://themockup.blog/posts/2020-09-04-10-table-rules-in-r/">Tom Mock guide</a>, based on Jon Schwabish’s original. It covers guidelines for making better tables, and shows how to implement them in <strong>gt</strong>. It demonstrates even more of what gt can do than the article on the previous slide.</p>
+</section>
+<section id="gtsummary" class="slide level2">
+<h2>gtsummary</h2>
+<p><a href="http://www.danieldsjoberg.com/gtsummary/"><strong>gtsummary</strong></a> extends the <strong>gt</strong> package and is used for summarising tables and working with statistical model summaries.</p>
+</section>
+<section id="gtsummary-example-1-data" class="slide level2">
+<h2>gtsummary example 1: data</h2>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a><span class="fu">library</span>(gtsummary)</span>
+<span id="cb28-2"><a></a><span class="co"># make dataset with a few variables to summarize</span></span>
+<span id="cb28-3"><a></a>trial2 <span class="ot">&lt;-</span> trial <span class="sc">|&gt;</span> <span class="fu">select</span>(age, grade, response, trt)</span>
+<span id="cb28-4"><a></a></span>
+<span id="cb28-5"><a></a><span class="fu">head</span>(trial2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 4
+    age grade response trt   
+  &lt;dbl&gt; &lt;fct&gt;    &lt;int&gt; &lt;chr&gt; 
+1    23 II           0 Drug A
+2     9 I            1 Drug B
+3    31 II           0 Drug A
+4    NA III          1 Drug A
+5    51 III          1 Drug A
+6    39 I            0 Drug B</code></pre>
+</div>
+</div>
+</section>
+<section id="gtsummary-example-1-code" class="slide level2">
+<h2>gtsummary example 1: code</h2>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a><span class="co"># summarize and augment the data</span></span>
+<span id="cb30-2"><a></a>summary_table <span class="ot">&lt;-</span> </span>
+<span id="cb30-3"><a></a>  <span class="fu">tbl_summary</span>(</span>
+<span id="cb30-4"><a></a>    trial2,</span>
+<span id="cb30-5"><a></a>    <span class="at">by =</span> trt, <span class="co"># split table by group</span></span>
+<span id="cb30-6"><a></a>    <span class="at">missing =</span> <span class="st">"no"</span> <span class="co"># don't list missing data separately</span></span>
+<span id="cb30-7"><a></a>  )  <span class="sc">|&gt;</span> </span>
+<span id="cb30-8"><a></a>  <span class="fu">add_n</span>() <span class="sc">|&gt;</span> <span class="co"># add column with total number of non-missing observations</span></span>
+<span id="cb30-9"><a></a>  <span class="fu">add_p</span>() <span class="sc">|&gt;</span> <span class="co"># test for a difference between groups</span></span>
+<span id="cb30-10"><a></a>  <span class="fu">modify_header</span>(<span class="at">label =</span> <span class="st">"**Variable**"</span>) <span class="sc">|&gt;</span> <span class="co"># update the column header</span></span>
+<span id="cb30-11"><a></a>  <span class="fu">bold_labels</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="gtsummary-example-1-output" class="slide level2">
+<h2>gtsummary example 1: output</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="xecwqmemhq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#xecwqmemhq table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#xecwqmemhq thead, #xecwqmemhq tbody, #xecwqmemhq tfoot, #xecwqmemhq tr, #xecwqmemhq td, #xecwqmemhq th {
+  border-style: none;
+}
+
+#xecwqmemhq p {
+  margin: 0;
+  padding: 0;
+}
+
+#xecwqmemhq .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#xecwqmemhq .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#xecwqmemhq .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#xecwqmemhq .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#xecwqmemhq .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#xecwqmemhq .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#xecwqmemhq .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#xecwqmemhq .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#xecwqmemhq .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#xecwqmemhq .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#xecwqmemhq .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#xecwqmemhq .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#xecwqmemhq .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#xecwqmemhq .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#xecwqmemhq .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#xecwqmemhq .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#xecwqmemhq .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#xecwqmemhq .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#xecwqmemhq .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#xecwqmemhq .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#xecwqmemhq .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#xecwqmemhq .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#xecwqmemhq .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#xecwqmemhq .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#xecwqmemhq .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#xecwqmemhq .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#xecwqmemhq .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#xecwqmemhq .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#xecwqmemhq .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#xecwqmemhq .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#xecwqmemhq .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#xecwqmemhq .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#xecwqmemhq .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#xecwqmemhq .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#xecwqmemhq .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#xecwqmemhq .gt_left {
+  text-align: left;
+}
+
+#xecwqmemhq .gt_center {
+  text-align: center;
+}
+
+#xecwqmemhq .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#xecwqmemhq .gt_font_normal {
+  font-weight: normal;
+}
+
+#xecwqmemhq .gt_font_bold {
+  font-weight: bold;
+}
+
+#xecwqmemhq .gt_font_italic {
+  font-style: italic;
+}
+
+#xecwqmemhq .gt_super {
+  font-size: 65%;
+}
+
+#xecwqmemhq .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#xecwqmemhq .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#xecwqmemhq .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#xecwqmemhq .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#xecwqmemhq .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#xecwqmemhq .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#xecwqmemhq .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#xecwqmemhq .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#xecwqmemhq div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1540,32 +2093,32 @@ see '?methods' for accessing help and source code</code></pre>
 <section id="gtsummary-example-2-code" class="slide level2">
 <h2>gtsummary example 2: code</h2>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a>mod1 <span class="ot">&lt;-</span> <span class="fu">glm</span>(response <span class="sc">~</span> trt <span class="sc">+</span> age <span class="sc">+</span> grade, trial, <span class="at">family =</span> binomial)</span>
-<span id="cb30-2"><a></a></span>
-<span id="cb30-3"><a></a>regression_tab <span class="ot">&lt;-</span> <span class="fu">tbl_regression</span>(mod1, <span class="at">exponentiate =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a></a>mod1 <span class="ot">&lt;-</span> <span class="fu">glm</span>(response <span class="sc">~</span> trt <span class="sc">+</span> age <span class="sc">+</span> grade, trial, <span class="at">family =</span> binomial)</span>
+<span id="cb31-2"><a></a></span>
+<span id="cb31-3"><a></a>regression_tab <span class="ot">&lt;-</span> <span class="fu">tbl_regression</span>(mod1, <span class="at">exponentiate =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="gtsummary-example-2-output" class="slide level2">
 <h2>gtsummary example 2: output</h2>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="zwtisdfljk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#zwtisdfljk table {
+<div id="kslhoiuual" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#kslhoiuual table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#zwtisdfljk thead, #zwtisdfljk tbody, #zwtisdfljk tfoot, #zwtisdfljk tr, #zwtisdfljk td, #zwtisdfljk th {
+#kslhoiuual thead, #kslhoiuual tbody, #kslhoiuual tfoot, #kslhoiuual tr, #kslhoiuual td, #kslhoiuual th {
   border-style: none;
 }
 
-#zwtisdfljk p {
+#kslhoiuual p {
   margin: 0;
   padding: 0;
 }
 
-#zwtisdfljk .gt_table {
+#kslhoiuual .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1591,12 +2144,12 @@ see '?methods' for accessing help and source code</code></pre>
   border-left-color: #D3D3D3;
 }
 
-#zwtisdfljk .gt_caption {
+#kslhoiuual .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#zwtisdfljk .gt_title {
+#kslhoiuual .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1608,7 +2161,7 @@ see '?methods' for accessing help and source code</code></pre>
   border-bottom-width: 0;
 }
 
-#zwtisdfljk .gt_subtitle {
+#kslhoiuual .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1620,7 +2173,7 @@ see '?methods' for accessing help and source code</code></pre>
   border-top-width: 0;
 }
 
-#zwtisdfljk .gt_heading {
+#kslhoiuual .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1632,13 +2185,13 @@ see '?methods' for accessing help and source code</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#zwtisdfljk .gt_bottom_border {
+#kslhoiuual .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#zwtisdfljk .gt_col_headings {
+#kslhoiuual .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1653,7 +2206,7 @@ see '?methods' for accessing help and source code</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#zwtisdfljk .gt_col_heading {
+#kslhoiuual .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1673,7 +2226,7 @@ see '?methods' for accessing help and source code</code></pre>
   overflow-x: hidden;
 }
 
-#zwtisdfljk .gt_column_spanner_outer {
+#kslhoiuual .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1685,15 +2238,15 @@ see '?methods' for accessing help and source code</code></pre>
   padding-right: 4px;
 }
 
-#zwtisdfljk .gt_column_spanner_outer:first-child {
+#kslhoiuual .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#zwtisdfljk .gt_column_spanner_outer:last-child {
+#kslhoiuual .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#zwtisdfljk .gt_column_spanner {
+#kslhoiuual .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1705,11 +2258,11 @@ see '?methods' for accessing help and source code</code></pre>
   width: 100%;
 }
 
-#zwtisdfljk .gt_spanner_row {
+#kslhoiuual .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#zwtisdfljk .gt_group_heading {
+#kslhoiuual .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1735,7 +2288,7 @@ see '?methods' for accessing help and source code</code></pre>
   text-align: left;
 }
 
-#zwtisdfljk .gt_empty_group_heading {
+#kslhoiuual .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1750,15 +2303,15 @@ see '?methods' for accessing help and source code</code></pre>
   vertical-align: middle;
 }
 
-#zwtisdfljk .gt_from_md > :first-child {
+#kslhoiuual .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#zwtisdfljk .gt_from_md > :last-child {
+#kslhoiuual .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#zwtisdfljk .gt_row {
+#kslhoiuual .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1777,7 +2330,7 @@ see '?methods' for accessing help and source code</code></pre>
   overflow-x: hidden;
 }
 
-#zwtisdfljk .gt_stub {
+#kslhoiuual .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1790,7 +2343,7 @@ see '?methods' for accessing help and source code</code></pre>
   padding-right: 5px;
 }
 
-#zwtisdfljk .gt_stub_row_group {
+#kslhoiuual .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1804,15 +2357,15 @@ see '?methods' for accessing help and source code</code></pre>
   vertical-align: top;
 }
 
-#zwtisdfljk .gt_row_group_first td {
+#kslhoiuual .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#zwtisdfljk .gt_row_group_first th {
+#kslhoiuual .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#zwtisdfljk .gt_summary_row {
+#kslhoiuual .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1822,16 +2375,16 @@ see '?methods' for accessing help and source code</code></pre>
   padding-right: 5px;
 }
 
-#zwtisdfljk .gt_first_summary_row {
+#kslhoiuual .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#zwtisdfljk .gt_first_summary_row.thick {
+#kslhoiuual .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#zwtisdfljk .gt_last_summary_row {
+#kslhoiuual .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1841,7 +2394,7 @@ see '?methods' for accessing help and source code</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#zwtisdfljk .gt_grand_summary_row {
+#kslhoiuual .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1851,7 +2404,7 @@ see '?methods' for accessing help and source code</code></pre>
   padding-right: 5px;
 }
 
-#zwtisdfljk .gt_first_grand_summary_row {
+#kslhoiuual .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1861,7 +2414,7 @@ see '?methods' for accessing help and source code</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#zwtisdfljk .gt_last_grand_summary_row_top {
+#kslhoiuual .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1871,11 +2424,11 @@ see '?methods' for accessing help and source code</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#zwtisdfljk .gt_striped {
+#kslhoiuual .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#zwtisdfljk .gt_table_body {
+#kslhoiuual .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1884,7 +2437,7 @@ see '?methods' for accessing help and source code</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#zwtisdfljk .gt_footnotes {
+#kslhoiuual .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1898,7 +2451,7 @@ see '?methods' for accessing help and source code</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#zwtisdfljk .gt_footnote {
+#kslhoiuual .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1907,7 +2460,7 @@ see '?methods' for accessing help and source code</code></pre>
   padding-right: 5px;
 }
 
-#zwtisdfljk .gt_sourcenotes {
+#kslhoiuual .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1921,7 +2474,7 @@ see '?methods' for accessing help and source code</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#zwtisdfljk .gt_sourcenote {
+#kslhoiuual .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1929,72 +2482,72 @@ see '?methods' for accessing help and source code</code></pre>
   padding-right: 5px;
 }
 
-#zwtisdfljk .gt_left {
+#kslhoiuual .gt_left {
   text-align: left;
 }
 
-#zwtisdfljk .gt_center {
+#kslhoiuual .gt_center {
   text-align: center;
 }
 
-#zwtisdfljk .gt_right {
+#kslhoiuual .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#zwtisdfljk .gt_font_normal {
+#kslhoiuual .gt_font_normal {
   font-weight: normal;
 }
 
-#zwtisdfljk .gt_font_bold {
+#kslhoiuual .gt_font_bold {
   font-weight: bold;
 }
 
-#zwtisdfljk .gt_font_italic {
+#kslhoiuual .gt_font_italic {
   font-style: italic;
 }
 
-#zwtisdfljk .gt_super {
+#kslhoiuual .gt_super {
   font-size: 65%;
 }
 
-#zwtisdfljk .gt_footnote_marks {
+#kslhoiuual .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#zwtisdfljk .gt_asterisk {
+#kslhoiuual .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#zwtisdfljk .gt_indent_1 {
+#kslhoiuual .gt_indent_1 {
   text-indent: 5px;
 }
 
-#zwtisdfljk .gt_indent_2 {
+#kslhoiuual .gt_indent_2 {
   text-indent: 10px;
 }
 
-#zwtisdfljk .gt_indent_3 {
+#kslhoiuual .gt_indent_3 {
   text-indent: 15px;
 }
 
-#zwtisdfljk .gt_indent_4 {
+#kslhoiuual .gt_indent_4 {
   text-indent: 20px;
 }
 
-#zwtisdfljk .gt_indent_5 {
+#kslhoiuual .gt_indent_5 {
   text-indent: 25px;
 }
 
-#zwtisdfljk .katex-display {
+#kslhoiuual .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#zwtisdfljk div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#kslhoiuual div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2085,12 +2638,14 @@ see '?methods' for accessing help and source code</code></pre>
 </section>
 <section id="table-inspiration" class="slide level2">
 <h2>Table inspiration</h2>
-<p>The winners of the RStudio Table Contest</p>
+<p>The winners of the RStudio/Posit Table Contest</p>
 <ul>
+<li><p><a href="https://posit.co/blog/2024-table-contest-winners/">2024</a></p></li>
 <li><p><a href="https://posit.co/blog/winners-of-the-2022-table-contest/">2022</a></p></li>
 <li><p><a href="https://posit.co/blog/winners-of-the-2021-table-contest/">2021</a></p></li>
 <li><p><a href="https://www.rstudio.com/blog/winners-of-the-2020-rstudio-table-contest/">2020</a>, also has links to tutorials</p></li>
 </ul>
+<p><em>Contest does not appear to have been held in 2023.</em></p>
 </section></section>
 <section>
 <section id="end-matter" class="title-slide slide level1 inverse center">

@@ -1309,6 +1309,20 @@
     "text": "Parts of a gt table\n\nFrom https://gt.rstudio.com"
   },
   {
+    "objectID": "slides/05-graphics/index.html#getting-started",
+    "href": "slides/05-graphics/index.html#getting-started",
+    "title": "Graphics",
+    "section": "Getting started",
+    "text": "Getting started\n\nlibrary(gt)\n\n# Define the start and end dates for the data range\nstart_date &lt;- \"2010-06-07\"\nend_date &lt;- \"2010-06-14\"\n\n# Create a gt table based on preprocessed `sp500` table data\nsp500 |&gt;\n  dplyr::filter(date &gt;= start_date & date &lt;= end_date) |&gt;\n  dplyr::select(-adj_close) |&gt;\n  gt() |&gt;\n  tab_header(\n    title = \"S&P 500\",\n    subtitle = glue::glue(\"{start_date} to {end_date}\")\n  ) |&gt;\n  fmt_currency() |&gt;\n  fmt_date(columns = date, date_style = \"wd_m_day_year\") |&gt;\n  fmt_number(columns = volume, suffixing = TRUE)"
+  },
+  {
+    "objectID": "slides/05-graphics/index.html#getting-started-output",
+    "href": "slides/05-graphics/index.html#getting-started-output",
+    "title": "Graphics",
+    "section": "Getting started",
+    "text": "Getting started\n\n\n\n\n\n\n\nS&P 500\n\n\n2010-06-07 to 2010-06-14\n\n\ndate\nopen\nhigh\nlow\nclose\nvolume\n\n\n\n\nMon, Jun 14, 2010\n$1,095.00\n$1,105.91\n$1,089.03\n$1,089.63\n4.43B\n\n\nFri, Jun 11, 2010\n$1,082.65\n$1,092.25\n$1,077.12\n$1,091.60\n4.06B\n\n\nThu, Jun 10, 2010\n$1,058.77\n$1,087.85\n$1,058.77\n$1,086.84\n5.14B\n\n\nWed, Jun 9, 2010\n$1,062.75\n$1,077.74\n$1,052.25\n$1,055.69\n5.98B\n\n\nTue, Jun 8, 2010\n$1,050.81\n$1,063.15\n$1,042.17\n$1,062.00\n6.19B\n\n\nMon, Jun 7, 2010\n$1,065.84\n$1,071.36\n$1,049.86\n$1,050.47\n5.47B"
+  },
+  {
     "objectID": "slides/05-graphics/index.html#an-example",
     "href": "slides/05-graphics/index.html#an-example",
     "title": "Graphics",
@@ -1321,6 +1335,13 @@
     "title": "Graphics",
     "section": "Resources",
     "text": "Resources\nSee the article Case Study: gtcars for a thorough example of gt’s capabilities.\nSee also Albert Rapp’s book on gt."
+  },
+  {
+    "objectID": "slides/05-graphics/index.html#your-turn-2",
+    "href": "slides/05-graphics/index.html#your-turn-2",
+    "title": "Graphics",
+    "section": "Your turn!",
+    "text": "Your turn!\nThe {gt} package comes with several built-in datasets, including exibble, a toy example tibble.\nInstall the {gt} package, look at exibble, then create a table of the data using {gt}.\nHow good can you get it looking? You can consult the reference section on the {gt} website to see all the options available."
   },
   {
     "objectID": "slides/05-graphics/index.html#guidelines-for-better-tables",
@@ -1376,7 +1397,7 @@
     "href": "slides/05-graphics/index.html#table-inspiration",
     "title": "Graphics",
     "section": "Table inspiration",
-    "text": "Table inspiration\nThe winners of the RStudio Table Contest\n\n2022\n2021\n2020, also has links to tutorials"
+    "text": "Table inspiration\nThe winners of the RStudio/Posit Table Contest\n\n2024\n2022\n2021\n2020, also has links to tutorials\n\nContest does not appear to have been held in 2023."
   },
   {
     "objectID": "slides/05-graphics/index.html#license",
