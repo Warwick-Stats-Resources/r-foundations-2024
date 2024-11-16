@@ -122,7 +122,7 @@ Can you create a plot with triangular points linked by lines?
 
 Can you do the same with the `lines()` function? What are the similarities and differences?
 
-# ggplot2 {background-color="#552D62"}
+# ggplot2 {.inverse}
 
 ## Intro to ggplot2
 
@@ -457,7 +457,7 @@ Books about greating good data viz:
 
 - [Fundamental's of Data Visualisation by Claus Wilke](https://clauswilke.com/dataviz/)
 
-# Plots in RStudio  {background-color="#552D62"}
+# Plots in RStudio  {.inverse}
 
 ## Viewing and saving plots in RStudio
 
@@ -469,7 +469,7 @@ Plots can be saved in various formats using the Export drop down menu, which als
 
 **DEMO**
 
-# Tables {background-color="#552D62"}
+# Tables {.inverse}
 
 ## Getting started with tables
 
@@ -495,6 +495,31 @@ Here's a good [overview](https://rfortherestofus.com/2019/11/how-to-make-beautif
 knitr::include_graphics("images/gt_parts_of_a_table.svg")
 ```
 
+## Getting started
+
+```{r}
+#| output-location: slide
+library(gt)
+
+# Define the start and end dates for the data range
+start_date <- "2010-06-07"
+end_date <- "2010-06-14"
+
+# Create a gt table based on preprocessed `sp500` table data
+sp500 |>
+  dplyr::filter(date >= start_date & date <= end_date) |>
+  dplyr::select(-adj_close) |>
+  gt() |>
+  tab_header(
+    title = "S&P 500",
+    subtitle = glue::glue("{start_date} to {end_date}")
+  ) |>
+  fmt_currency() |>
+  fmt_date(columns = date, date_style = "wd_m_day_year") |>
+  fmt_number(columns = volume, suffixing = TRUE)
+```
+
+
 ## An example
 
 ```{r}
@@ -512,6 +537,14 @@ See the article [Case Study: gtcars](https://gt.rstudio.com/articles/case-study-
 
 See also Albert Rapp's [book on **gt**](https://gt.albert-rapp.de).
 
+
+## Your turn!
+
+The {gt} package comes with several built-in datasets, including `exibble`, a [toy example tibble](https://gt.rstudio.com/reference/exibble.html).
+
+Install the {gt} package, look at `exibble`, then create a table of the data using {gt}. 
+
+How good can you get it looking? You can consult the [reference section on the {gt} website](https://gt.rstudio.com/reference/index.html) to see all the options available.
 
 ## Guidelines for better tables
 
@@ -575,13 +608,17 @@ regression_tab
 
 ## Table inspiration
 
-The winners of the RStudio Table Contest
+The winners of the RStudio/Posit Table Contest
+
+- [2024](https://posit.co/blog/2024-table-contest-winners/)
 
 - [2022](https://posit.co/blog/winners-of-the-2022-table-contest/) 
 
 - [2021](https://posit.co/blog/winners-of-the-2021-table-contest/)
 
 - [2020](https://www.rstudio.com/blog/winners-of-the-2020-rstudio-table-contest/), also has links to tutorials
+
+*Contest does not appear to have been held in 2023.*
 
 
 # End matter {.inverse}
