@@ -1845,7 +1845,7 @@
     "href": "slides/06-quarto/index.html#this-quarto-presentation",
     "title": "Quarto",
     "section": "This Quarto presentation",
-    "text": "This Quarto presentation\n---\ntitle: Quarto\nsubtitle: R Foundations course\nauthor: Ella Kaye | Department of Statistics | University of Warwick\ntitle-slide-attributes:\n  data-background-color: \"#552D62\"\ndate: 2023-11-16\ndate-format: long\nformat: \n  revealjs:\n    theme: [default, ../../slides.scss]\n    slide-number: true\n    execute:\n      echo: true\n---"
+    "text": "This Quarto presentation\n---\ntitle: Quarto\nsubtitle: R Foundations 2024\nauthor: Ella Kaye, Department of Statistics\ndate: 2024-11-21\ndate-format: long\nformat: \n  warwickpres-revealjs:\n    execute:\n      echo: true\n      code-overflow: wrap\n    title-slide-attributes: \n      data-background-image: ../../images/warwick-logo-white.png\n      data-background-size: 15%\n      data-background-position: 100% 0%\n---"
   },
   {
     "objectID": "slides/06-quarto/index.html#more-on-quarto-presentations",
